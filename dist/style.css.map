@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../styles.scss",
+		"../src/base/_functions.scss",
+		"../src/base/_mixins.scss",
+		"../src/base/_variables.scss",
+		"../src/components/_default.scss",
+		"../src/components/_buttons.scss",
+		"../src/components/_hero.scss",
+		"../src/components/_masthead.scss"
+	],
+	"mappings": "",
+	"names": []
+}

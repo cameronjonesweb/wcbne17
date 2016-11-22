@@ -1,0 +1,18 @@
+{
+  "name": "wcben17",
+  "version": "1.0.0",
+  "description": "",
+  "repository": "https://github.com/cameronjonesweb/wcbne17",
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "grunt": "^0.4.5",
+    "grunt-australian-stylesheets": "0.0.2",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.2.0",
+    "node-sass": "^3.4.2"
+  }
+}
