@@ -21,18 +21,6 @@ module.exports = function(grunt){
 			}
 		},
 
-		cssmin: {
-			my_target: {
-				files: [{
-					expand: true,
-					cwd: 'dist/',
-					src: [ '*.css', '!*.min.css' ],
-					dest: 'dist/',
-					ext: '.min.css'
-				}]
-			}
-		},
-
 		postcss: {
             options: {
                 map: true,
@@ -59,8 +47,7 @@ module.exports = function(grunt){
 
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.loadNpmTasks( 'grunt-sass' );
-	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
 	grunt.loadNpmTasks( 'grunt-postcss' );
 	grunt.loadNpmTasks( 'grunt-australian-stylesheets' );
-	grunt.registerTask( 'default', [ 'sass', 'postcss', 'australianStylesheets', 'cssmin', 'watch' ] );
+	grunt.registerTask( 'default', [ 'sass', 'postcss', 'australianStylesheets', 'watch' ] );
 };
