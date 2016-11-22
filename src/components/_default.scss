@@ -1,0 +1,45 @@
+* {
+
+	position: relative;
+	box-sizing: border-box;
+	
+}
+
+html, body {
+	
+	position: static;
+
+}
+
+body {
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	
+}
+
+p {
+
+	line-height: 32px;
+	
+}
+
+img {
+
+	max-width: 100%;
+	height: auto;
+	min-height: 1px;
+	
+}
+
+a {
+	
+	color: inherit;
+	
+}
+
+span.sep:first-child, span.sep:last-child {
+	
+	display: none;
+	
+}

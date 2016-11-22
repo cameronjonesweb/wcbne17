@@ -1,0 +1,49 @@
+#masthead {
+	
+	padding: $gutter_y $gutter_x;
+	z-index: 90210;
+	width: 100%;
+	position: absolute;
+	
+	a {
+		
+		color: #fff;
+		
+	}
+	
+	hgroup {
+	
+		width: 30%;
+		display: inline-block;
+		margin-right: -4px;
+		
+	}
+
+	.site-navigation {
+		
+		width: 70%;
+		display: inline-block;
+		float: none;
+		margin-right: -4px;
+		text-align: right;
+	
+	}
+
+	li {
+		
+		float: none;
+		display: inline-block;
+		border-bottom: 3px solid transparent;
+		text-align: left;
+		margin-left: $gutter_x;
+		margin-right: $gutter_x;
+	
+		&.current-menu-item, &:hover {
+		
+			border-color: $green;
+		
+		}
+	
+	}
+	
+}

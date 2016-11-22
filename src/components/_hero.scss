@@ -1,0 +1,100 @@
+body.home #after-header-widgets {
+	
+	background-image: $hero;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	color: $white;
+	
+	aside {
+	
+		width: 100%;
+		
+	}
+	
+	h1 {
+		
+		font-size: 235px;
+	
+	}
+
+	h2 {
+	
+		font-size: 30px;
+		
+	}
+
+	&:before {
+	
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,50,0.3);
+	
+	}
+	
+}
+
+body.page:not(.home) .entry-header, body.archive .page-header {
+	
+	padding: 100px $gutter_x 50px;
+	background-image: $hero;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	
+	&:before {
+	
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,50,0.3);
+	
+	}
+	
+}
+
+body.blog {
+
+	#before-content-widgets {
+		
+		padding: 100px $gutter_x 50px;
+		background-image: $hero;
+		background-size: cover;
+		background-position: center;
+		color: $white;
+		
+		&:after {
+			
+			content: "Latest News";
+			position: relative;
+			z-index: 2;
+			
+		}
+
+		&:before {
+	
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,50,0.3);
+		
+		}
+		
+	}
+	
+}

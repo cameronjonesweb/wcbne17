@@ -1,0 +1,19 @@
+.button {
+	
+	padding: $gutter_y/2 $gutter_x;
+	background: $green;
+	border: 6px solid $green;
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	
+	&:hover {
+	
+		color: $green;
+		background: transparent;
+		
+	}
+	
+}
