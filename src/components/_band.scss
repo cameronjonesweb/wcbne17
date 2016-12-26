@@ -1,0 +1,60 @@
+.band {
+
+	&--large {
+
+		padding-top: 2em;
+		padding-bottom: 2em;
+
+	}
+
+
+	&--primary {
+
+		background-color: $green;
+		color: $white;
+
+	}
+
+
+	&--primary-angled-left {
+
+		@include mq( $bp_desk ) {
+
+			position: relative;
+
+			&:before {
+
+				background-color: $green;
+				content: "";
+				display: block;
+				height: 7em;
+				left: -50%;
+				position: absolute;
+				top: -15%;
+				transform-origin: center;
+				transform: rotate( 2deg );
+				width: 200%;
+
+			}
+
+
+			.band__body {
+
+				position: relative;
+				z-index: 5;
+
+			}
+
+		}
+
+	}
+
+
+	&--grey {
+
+		background-color: $grey;
+		color: $dark-grey;
+
+	}
+
+}
