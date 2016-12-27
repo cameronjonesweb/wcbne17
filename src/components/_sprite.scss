@@ -1,0 +1,16 @@
+.sprite {
+
+	background-image: $icon_sprite;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: $icon_height;
+	width: $icon_width;
+
+
+	&--chat {
+
+		@include sprite( 1, 1 );
+
+	}
+
+}
