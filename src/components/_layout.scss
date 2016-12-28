@@ -1,0 +1,41 @@
+.layout {
+
+	display: block;
+	list-style: none;
+	margin-left: -( $gutter_x );
+	padding-left: 0;
+
+	&__item {
+
+		display: inline-block;
+		margin-left: 0;
+		padding-left: $gutter_x;
+		width: 100%;
+
+	}
+
+}
+
+
+.listing {
+
+	margin-bottom: -( $gutter_x );
+
+	&__item {
+
+		margin-bottom: ( $gutter_x );
+
+	}
+
+}
+
+
+.g-one-half\@desk {
+
+	@include mq( $bp_desk ) {
+
+		width: 50%;
+
+	}
+
+}

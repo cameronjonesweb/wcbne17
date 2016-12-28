@@ -2,18 +2,63 @@
 	
 	padding: $gutter_y/2 $gutter_x;
 	background: $green;
-	border: 6px solid $green;
+	border: 2px solid $green;
 	display: inline-block;
 	text-transform: uppercase;
-	color: #fff;
+	color: $white;
 	text-decoration: none;
 	font-weight: bold;
+
+	&:visited {
+
+		color: $white;
+
+	}
 	
-	&:hover {
+	&:hover,
+	&:active {
 	
 		color: $green;
 		background: transparent;
 		
+	}
+
+
+	&--ghost {
+
+		background: transparent;
+
+		&:hover,
+		&:active {
+
+			background-color: $green;
+			color: $white;
+
+		}
+
+	}
+
+
+	&--white {
+
+		border-color: $white;
+		color: $white;
+		background-color: transparent;
+
+		&:visited {
+
+			color: $white;
+
+		}
+
+		&:hover,
+		&:active {
+
+			color: $green;
+			background-color: $white;
+
+		}
+
 	}
 	
 }

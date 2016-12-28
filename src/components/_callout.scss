@@ -1,0 +1,24 @@
+.callout {
+
+	&__primary {
+
+		@include mq( $bp_desk ) {
+
+			padding-right: 12em;
+
+		}
+
+	}
+
+	&__button {
+
+		@include mq( $bp_desk ) {
+
+			float: right;
+			margin-top: -5.5em;
+
+		}
+
+	}
+
+}
