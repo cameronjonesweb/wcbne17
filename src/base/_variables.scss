@@ -1,6 +1,8 @@
 // Colours
 $green: #5cd3bd;
 $white: #fff;
+$darkblue: #111c27;
+$lightblue: #19293a;
 $grey: #f4f4f4;
 $dark-grey: #4a4a4a;
 
@@ -11,6 +13,10 @@ $hero: url(https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/14963293_81881120488854
 $gutter_x: 30px;
 $gutter_y: 20px;
 
+// Breakpoints
+$desk: 1280px;
+$lap: 1024px;
+$tab: 768px;
 
 // Main large breakpoint
 $bp_desk: 992px;
