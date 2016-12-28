@@ -1,0 +1,10 @@
+// Include a media query
+@mixin mq( $size: $bp_desk ) {
+
+	@media ( min-width: "#{ $size }" ) {
+
+		@content;
+
+	}
+
+}
