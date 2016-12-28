@@ -16,10 +16,47 @@
 		background-color: $green;
 		color: $white;
 
+		a,
+		a:visited {
+
+			color: inherit;
+
+		}
+
 	}
 
 
-	&--primary-angled-left {
+	&--secondary {
+
+		background-color: $navy;
+		color: $white;
+
+		a,
+		a:visited {
+
+			color: inherit;
+
+		}
+
+	}
+
+
+	&--secondary-dark {
+
+		background-color: darken( $navy, 5 );
+		color: $white;
+
+		a,
+		a:visited {
+
+			color: inherit;
+
+		}
+
+	}
+
+
+	&--primary-angled {
 
 		@include mq( $bp_desk ) {
 
@@ -35,7 +72,6 @@
 				position: absolute;
 				top: -15%;
 				transform-origin: center;
-				transform: rotate( 2deg );
 				width: 200%;
 
 			}
@@ -45,6 +81,36 @@
 
 				position: relative;
 				z-index: 5;
+
+			}
+
+		}
+
+	}
+
+
+	&--primary-angled-left {
+
+		@include mq( $bp_desk ) {
+
+			&:before {
+
+				transform: rotate( 2deg );
+
+			}
+
+		}
+
+	}
+
+
+	&--primary-angled-right {
+
+		@include mq( $bp_desk ) {
+
+			&:before {
+
+				transform: rotate( -2deg );
 
 			}
 
