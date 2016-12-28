@@ -1,0 +1,100 @@
+.box {
+
+	background-color: $white;
+	color: inherit;
+	display: block;
+	font-weight: 900;
+	overflow: hidden;
+	padding: 1.25em 1.5em;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	@include mq( $bp_lap ) {
+
+		padding: 2.5em 3em;
+
+	}
+
+	&:visited {
+
+		color: inherit;
+
+	}
+
+	&:hover,
+	&:active {
+
+		color: $green;
+
+
+		.box__link:after {
+
+			width: 5em;
+
+		}
+
+		.sprite--chat {
+
+			@include sprite( 2, 1 );
+
+		}
+
+	}
+
+
+	&:before {
+
+		content: attr(title);
+		display: inline-block;
+		font-size: 5em;
+		left: .23em;
+		opacity: .1;
+		position: absolute;
+		top: .7em;
+
+		@include mq( $bp_lap ) {
+
+			font-size: 6.5em;
+			left: .41em;
+			top: .45em;
+
+		}
+
+	}
+
+
+	&__body {
+
+		position: relative;
+		z-index: 5;
+
+	}
+
+
+		&__icon {}
+
+
+		&__heading {}
+
+
+		&__link {
+
+			color: $green;
+			display: inline-block;
+
+			&:after {
+
+				background-color: $green;
+				content: "";
+				display: block;
+				height: 2px;
+				margin-top: 1em;
+				width: 4em;
+				transition: width .2s ease;
+
+			}
+
+		}
+
+}

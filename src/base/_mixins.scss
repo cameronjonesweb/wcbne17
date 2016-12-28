@@ -8,3 +8,10 @@
 	}
 
 }
+
+
+@mixin sprite( $x, $y ) {
+
+	background-position: #{ -( $icon_height * ( $x - 1 ) ) } #{ -( $icon_width * ( $y - 1) ) };
+
+}
