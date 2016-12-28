@@ -1,0 +1,17 @@
+// Include a media query
+@mixin mq( $size: $bp_desk ) {
+
+	@media ( min-width: "#{ $size }" ) {
+
+		@content;
+
+	}
+
+}
+
+
+@mixin sprite( $x, $y ) {
+
+	background-position: #{ -( $icon_height * ( $x - 1 ) ) } #{ -( $icon_width * ( $y - 1) ) };
+
+}
