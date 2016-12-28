@@ -19,7 +19,19 @@ body.home #after-header-widgets {
 	
 	h1 {
 		
-		font-size: 235px;
+		font-size: 75px;
+
+		@include mq( $bp_lap ) {
+
+			font-size: 150px;
+
+		}
+
+		@include mq( $bp_desk ) {
+
+			font-size: 235px;
+
+		}
 	
 	}
 

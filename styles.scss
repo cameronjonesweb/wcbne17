@@ -7,9 +7,14 @@
 
 // Components
 @import 'src/components/default';
+@import 'src/components/site';
+@import 'src/components/headings';
 
+@import 'src/components/band';
+@import 'src/components/wrap';
 @import 'src/components/buttons';
 @import 'src/components/hero';
+@import 'src/components/footer';
 @import 'src/components/masthead';
 @import 'src/components/organisers';
 @import 'src/components/schedule';
@@ -24,3 +29,4 @@
 @import 'src/components/layout';
 @import 'src/components/box';
 @import 'src/components/callout';
+@import 'src/components/sprite';
