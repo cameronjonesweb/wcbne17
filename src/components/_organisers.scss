@@ -7,6 +7,16 @@
 			@extend h3;
 
 		}
+
+		.wcorg-organizer-description {
+
+			mq( $bp_desk ) {
+
+				max-width: 70%;
+
+			}
+
+		}
 		
 	}
 	
