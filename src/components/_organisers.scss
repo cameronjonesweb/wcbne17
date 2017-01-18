@@ -10,7 +10,7 @@
 
 		.wcorg-organizer-description {
 
-			mq( $bp_desk ) {
+			@include mq( $bp_desk ) {
 
 				max-width: 70%;
 

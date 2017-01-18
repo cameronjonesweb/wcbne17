@@ -255,8 +255,9 @@ body.blog #before-content-widgets {
     #masthead li.current-menu-item, #masthead li:hover {
       border-color: #5cd3bd; }
 
-.wcorg-organizers .wcorg-organizer .wcorg-organizer-description mq($bp_desk) {
-  max-width: 70%; }
+@media (min-width: 992px) {
+  .wcorg-organizers .wcorg-organizer .wcorg-organizer-description {
+    max-width: 70%; } }
 
 .sponsor-level {
   text-align: center; }
