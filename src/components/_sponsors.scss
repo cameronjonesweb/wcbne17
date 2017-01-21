@@ -2,6 +2,15 @@
 
 	@extend .band--grey;
 	@extend .band--large;
+	padding-top: 0 !important;
+
+	.widget-title {
+
+		@extend .wrap;
+		@extend h2;
+		text-align: center;
+
+	}
 
 }
 
@@ -10,5 +19,38 @@
 
 	@extend .wrap;
 	text-align: center;
+
+}
+
+
+.sponsor-logo {
+
+	background-color: $white;
+	color: $green;
+	display: inline-block;
+	font-weight: 600;
+	margin: 1em;
+	padding: 2em;
+	text-decoration: none;
+	width: 80%;
+
+	@include mq( $bp_lap ) {
+
+		width: 33.333%;
+
+	}
+
+	@include mq( $bp_desk ) {
+
+		width: 20%;
+
+	}
+
+	img {
+
+		max-height: 10em;
+		max-width: 10em;
+
+	}
 
 }
