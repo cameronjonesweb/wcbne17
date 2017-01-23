@@ -8,7 +8,7 @@
 
 }
 
-body.home #primary, body.blog article, body.single article > .entry-content, body.archive article, body.page article > .entry-content {
+body.home #primary, body.single article > .entry-content, body.archive article, body.page article > .entry-content {
 
 	@extend .wrap;
 
@@ -17,7 +17,7 @@ body.home #primary, body.blog article, body.single article > .entry-content, bod
 
 }
 
-#nav-below, #comments, body.single footer.entry-meta, #secondary {
+#content .site-navigation, #comments, body.single footer.entry-meta, #secondary {
 	
 	@extend .wrap;
 
