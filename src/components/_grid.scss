@@ -1,0 +1,13 @@
+.grid_6 {
+	
+	display: inline-block;
+	margin-right: -4px;
+	vertical-align: top;
+
+	@include mq( $bp_desk ) {
+
+		width: 50%;
+
+	}
+
+}

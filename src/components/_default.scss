@@ -35,6 +35,13 @@ img {
 a {
 	
 	color: inherit;
+
+	&:hover, &:focus, &:active, &:visited {
+
+		color: inherit;
+		text-decoration: none;
+
+	}
 	
 }
 
