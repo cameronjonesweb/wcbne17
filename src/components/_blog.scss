@@ -1,7 +1,34 @@
-.entry-content {
+body.blog {
 	
-	padding-left: $gutter_x;
-	padding-right: $gutter_x;
+	article:nth-child(even) {
+
+		background-color: $grey;
+
+	}
 
 }
 
+.comments-title {
+	
+	@extend h3;
+
+}
+
+.comments-link {
+	
+	display: block;
+	margin-bottom: 1.5em;
+
+}
+
+#reply-title {
+	
+	@extend h4;
+
+}
+
+img.avatar {
+	
+	vertical-align: middle;
+
+}

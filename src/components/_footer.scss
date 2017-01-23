@@ -8,7 +8,7 @@
 		padding: 30px 0;
 		text-align: centre;
 
-		@media (min-width: $bp_desk) {
+		@include mq( $bp_desk ) {
 
 			padding: 60px;
 

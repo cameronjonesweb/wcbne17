@@ -1,5 +1,15 @@
-input {
+input, input[type=text], input[type=email], textarea {
 
 	padding: .75em 1em;
+
+}
+
+input[type=submit] {
+	
+	@extend .button;
+
+	border-radius: 0;
+	box-shadow: none;
+	text-shadow: none;
 
 }

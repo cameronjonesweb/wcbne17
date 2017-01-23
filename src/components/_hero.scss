@@ -83,6 +83,12 @@ body.page:not(.home) .entry-header, body.archive .page-header, body.single-post 
 	
 }
 
+body.archive .page-title {
+	
+	@extend h3;
+
+}
+
 body.blog {
 
 	#before-content-widgets {

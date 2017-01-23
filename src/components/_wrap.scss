@@ -7,3 +7,18 @@
 	padding-right: $gutter_x;
 
 }
+
+body.home #primary, body.blog article, body.single article > .entry-content, body.archive article, body.page article > .entry-content {
+
+	@extend .wrap;
+
+	padding-bottom: $gutter_y;
+	padding-top: $gutter_y;
+
+}
+
+#nav-below, #comments, body.single footer.entry-meta, #secondary {
+	
+	@extend .wrap;
+
+}
