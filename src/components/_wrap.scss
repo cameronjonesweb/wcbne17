@@ -9,10 +9,10 @@
 }
 
 body.home #primary, 
-body.single:not(.single-wcb_sponsor) article > .entry-content, 
+body.single-post article > .entry-content, 
 body.archive article, 
 body.page article > .entry-content, 
-body.single-wcb_sponsor #primary {
+body.single:not(.single-post) #primary {
 
 	@extend .wrap;
 
