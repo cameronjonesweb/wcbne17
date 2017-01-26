@@ -8,7 +8,11 @@
 
 }
 
-body.home #primary, body.single article > .entry-content, body.archive article, body.page article > .entry-content {
+body.home #primary, 
+body.single:not(.single-wcb_sponsor) article > .entry-content, 
+body.archive article, 
+body.page article > .entry-content, 
+body.single-wcb_sponsor #primary {
 
 	@extend .wrap;
 
