@@ -55,9 +55,9 @@ body.home #after-header-widgets {
 	
 }
 
-body.page:not(.home) .entry-header, body.archive .page-header, body.single-post .entry-header {
+body.page:not(.home) .entry-header, body.archive .page-header, body.single-post .entry-header, body.single-wcb_speaker .entry-header {
 
-	padding: 100px $gutter_x 50px;
+	padding: 100px 0 50px;
 	background-image: $hero;
 	background-size: cover;
 	background-position: center;
@@ -89,17 +89,19 @@ body.page:not(.home) .entry-header, body.archive .page-header, body.single-post 
 	
 }
 
+
 body.archive .page-title {
 	
 	@extend h3;
 
 }
 
-body.blog {
+
+body.blog, body.single:not(.single-post):not(.single-wcb_speaker) {
 
 	#before-content-widgets {
 		
-		padding: 100px $gutter_x 50px;
+		padding: 100px 0 50px;
 		background-image: $hero;
 		background-size: cover;
 		background-position: center;
@@ -111,7 +113,6 @@ body.blog {
 
 			@extend .wrap;
 			
-			content: "Latest News";
 			display: block;
 			position: relative;
 			z-index: 2;
@@ -132,4 +133,17 @@ body.blog {
 		
 	}
 	
+}
+
+
+body.blog #before-content-widgets:after {
+	
+	content: "Latest News";
+
+}
+
+body.single-wcb_sponsor #before-content-widgets:after {
+
+	content: "Sponsors";
+
 }
