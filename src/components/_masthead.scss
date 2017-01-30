@@ -26,6 +26,13 @@
 		float: none;
 		margin-right: -4px;
 		text-align: right;
+		vertical-align: top;
+
+		@include mq( $bp_lap ) {
+
+			vertical-align: middle;
+
+		}
 	
 	}
 
@@ -49,6 +56,28 @@
 	.site-title {
 
 		font-size: 2rem;
+
+	}
+
+	.menu-toggle {
+
+		color: $green;
+	    font-size: 1em;
+	    right: 1em;
+
+	    &:after {
+
+	    	content: "";
+		    position: absolute;
+		    display: block;
+		    height: 0;
+		    top: 50%;
+		    margin-top: -0.5rem;
+		    right: -2.5rem;
+		    box-shadow: 0 0 0 1px $green, 0 7px 0 1px $green, 0 14px 0 1px $green;
+		    width: 1em;
+
+	    }
 
 	}
 	
