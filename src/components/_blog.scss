@@ -1,0 +1,51 @@
+body.blog {
+	
+	article:nth-child(even) {
+
+		background-color: $grey;
+
+	}
+
+}
+
+.comments-title {
+	
+	@extend h3;
+
+}
+
+.comments-link {
+	
+	display: block;
+	margin-bottom: 1.5em;
+
+}
+
+#reply-title {
+	
+	@extend h4;
+
+}
+
+img.avatar {
+	
+	vertical-align: middle;
+
+}
+
+body.blog article {
+	
+	padding-bottom: $gutter_y;
+	padding-top: $gutter_y;
+
+	> * {
+
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1170px;
+		padding-left: $gutter_x;
+		padding-right: $gutter_x;
+
+	}
+
+}

@@ -7,3 +7,23 @@
 	padding-right: $gutter_x;
 
 }
+
+body.home #primary, 
+body.single-post article > .entry-content,
+body.single-wcb_speaker article > .entry-content,
+body.archive article, 
+body.page article > .entry-content, 
+body.single:not(.single-post):not(.single-wcb_speaker) #primary {
+
+	@extend .wrap;
+
+	padding-bottom: $gutter_y;
+	padding-top: $gutter_y;
+
+}
+
+#content .site-navigation, #comments, body.single footer.entry-meta, #secondary {
+	
+	@extend .wrap;
+
+}
