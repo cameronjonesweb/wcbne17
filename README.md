@@ -1,5 +1,7 @@
 # WordCamp Brisbane 2017
 
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com/)
+
 This is the stylesheet for the website for [WordCamp Brisbane 2017](https://2017.brisbane.wordcamp.org/).
 
 ## Organisation Team
@@ -18,3 +20,7 @@ We welcome patches from the community.
 2. Make your changes in the src directory
 	* Don't commit the compiled CSS file, we'll do that after merging
 3. Open a pull request
+
+## License
+
+This project is licensed under the GPL v2.0
