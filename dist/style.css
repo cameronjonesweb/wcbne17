@@ -27,6 +27,9 @@ a {
 span.sep:first-child, span.sep:last-child {
   display: none; }
 
+.hentry {
+  margin: 0; }
+
 .site {
   overflow: auto;
   overflow-x: hidden; }
@@ -41,7 +44,12 @@ h2, .widget.wcb_widget_sponsors .widget-title,
   font-weight: 900;
   text-transform: uppercase; }
 
-h3, body.page:not(.home) .entry-header .entry-title, body.archive .page-header .entry-title, body.single-post .entry-header .entry-title, body.single-wcb_speaker .entry-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after, body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .wcorg-organizers .wcorg-organizer h2, .wcorg-organizers .wcorg-organizer .widget.wcb_widget_sponsors .widget-title, .widget.wcb_widget_sponsors .wcorg-organizers .wcorg-organizer .widget-title, .comments-title,
+h3, body.page:not(.home) .entry-header .entry-title,
+body.archive .page-header .entry-title,
+body.single-post .entry-header .entry-title,
+body.single-wcb_speaker .entry-header .entry-title,
+body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
+body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .wcorg-organizers .wcorg-organizer h2, .wcorg-organizers .wcorg-organizer .widget.wcb_widget_sponsors .widget-title, .widget.wcb_widget_sponsors .wcorg-organizers .wcorg-organizer .widget-title, .comments-title,
 .h3,
 .site-footer .widget-title {
   font-size: 2.1em;
@@ -116,8 +124,16 @@ h6, [id^="footer-widget-2"] .widget-title {
 body.single-post article > .entry-content,
 body.single-wcb_speaker article > .entry-content,
 body.archive article,
+body.search article,
 body.page article > .entry-content,
-body.single:not(.single-post):not(.single-wcb_speaker) #primary, #content .site-navigation, #comments, body.single footer.entry-meta, #secondary, body.page:not(.home) .entry-header > *, body.archive .page-header > *, body.single-post .entry-header > *, body.single-wcb_speaker .entry-header > *, body.blog #before-content-widgets:after, body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .widget.wcb_widget_sponsors .widget-title, .sponsor-level, [id^="footer-widgets"] {
+body.single:not(.single-post):not(.single-wcb_speaker) #primary, #content .site-navigation, #comments,
+body.single footer.entry-meta,
+#secondary, body.page:not(.home) .entry-header > *,
+body.archive .page-header > *,
+body.single-post .entry-header > *,
+body.single-wcb_speaker .entry-header > *,
+body.search .page-header > *, body.blog #before-content-widgets:after,
+body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .widget.wcb_widget_sponsors .widget-title, .sponsor-level, [id^="footer-widgets"] {
   margin-left: auto;
   margin-right: auto;
   max-width: 1170px;
@@ -128,6 +144,7 @@ body.home #primary,
 body.single-post article > .entry-content,
 body.single-wcb_speaker article > .entry-content,
 body.archive article,
+body.search article,
 body.page article > .entry-content,
 body.single:not(.single-post):not(.single-wcb_speaker) #primary {
   padding-bottom: 2rem;
@@ -201,13 +218,21 @@ body.home #after-header-widgets {
     height: 100%;
     background: rgba(0, 0, 50, 0.3); }
 
-body.page:not(.home) .entry-header, body.archive .page-header, body.single-post .entry-header, body.single-wcb_speaker .entry-header {
+body.page:not(.home) .entry-header,
+body.archive .page-header,
+body.single-post .entry-header,
+body.single-wcb_speaker .entry-header,
+body.search .page-header {
   padding: 100px 0 50px;
   background-image: url(https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/14963293_818811204888544_7171333292064415941_n.jpg?oh=9d3bce540d8134f041963dd28e210196&oe=58C5474F);
   background-size: cover;
   background-position: center;
   color: #fff; }
-  body.page:not(.home) .entry-header:before, body.archive .page-header:before, body.single-post .entry-header:before, body.single-wcb_speaker .entry-header:before {
+  body.page:not(.home) .entry-header:before,
+  body.archive .page-header:before,
+  body.single-post .entry-header:before,
+  body.single-wcb_speaker .entry-header:before,
+  body.search .page-header:before {
     content: "";
     position: absolute;
     top: 0;
@@ -216,17 +241,20 @@ body.page:not(.home) .entry-header, body.archive .page-header, body.single-post 
     height: 100%;
     background: rgba(0, 0, 50, 0.3); }
 
-body.blog #before-content-widgets, body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets {
+body.blog #before-content-widgets,
+body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets {
   padding: 100px 0 50px;
   background-image: url(https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/14963293_818811204888544_7171333292064415941_n.jpg?oh=9d3bce540d8134f041963dd28e210196&oe=58C5474F);
   background-size: cover;
   background-position: center;
   color: #fff; }
-  body.blog #before-content-widgets:after, body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after {
+  body.blog #before-content-widgets:after,
+  body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after {
     display: block;
     position: relative;
     z-index: 2; }
-  body.blog #before-content-widgets:before, body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:before {
+  body.blog #before-content-widgets:before,
+  body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:before {
     content: "";
     position: absolute;
     top: 0;
@@ -476,7 +504,12 @@ h2, .widget.wcb_widget_sponsors .widget-title,
   font-weight: 900;
   text-transform: uppercase; }
 
-h3, body.page:not(.home) .entry-header .entry-title, body.archive .page-header .entry-title, body.single-post .entry-header .entry-title, body.single-wcb_speaker .entry-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after, body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .wcorg-organizers .wcorg-organizer h2, .wcorg-organizers .wcorg-organizer .widget.wcb_widget_sponsors .widget-title, .widget.wcb_widget_sponsors .wcorg-organizers .wcorg-organizer .widget-title, .comments-title,
+h3, body.page:not(.home) .entry-header .entry-title,
+body.archive .page-header .entry-title,
+body.single-post .entry-header .entry-title,
+body.single-wcb_speaker .entry-header .entry-title,
+body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
+body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .wcorg-organizers .wcorg-organizer h2, .wcorg-organizers .wcorg-organizer .widget.wcb_widget_sponsors .widget-title, .widget.wcb_widget_sponsors .wcorg-organizers .wcorg-organizer .widget-title, .comments-title,
 .h3,
 .site-footer .widget-title {
   font-size: 2.1em;
@@ -495,8 +528,16 @@ h6, [id^="footer-widget-2"] .widget-title {
 body.single-post article > .entry-content,
 body.single-wcb_speaker article > .entry-content,
 body.archive article,
+body.search article,
 body.page article > .entry-content,
-body.single:not(.single-post):not(.single-wcb_speaker) #primary, #content .site-navigation, #comments, body.single footer.entry-meta, #secondary, body.page:not(.home) .entry-header > *, body.archive .page-header > *, body.single-post .entry-header > *, body.single-wcb_speaker .entry-header > *, body.blog #before-content-widgets:after, body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .widget.wcb_widget_sponsors .widget-title, .sponsor-level, [id^="footer-widgets"] {
+body.single:not(.single-post):not(.single-wcb_speaker) #primary, #content .site-navigation, #comments,
+body.single footer.entry-meta,
+#secondary, body.page:not(.home) .entry-header > *,
+body.archive .page-header > *,
+body.single-post .entry-header > *,
+body.single-wcb_speaker .entry-header > *,
+body.search .page-header > *, body.blog #before-content-widgets:after,
+body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .widget.wcb_widget_sponsors .widget-title, .sponsor-level, [id^="footer-widgets"] {
   margin-left: auto;
   margin-right: auto;
   max-width: 1170px;
@@ -507,6 +548,7 @@ body.home #primary,
 body.single-post article > .entry-content,
 body.single-wcb_speaker article > .entry-content,
 body.archive article,
+body.search article,
 body.page article > .entry-content,
 body.single:not(.single-post):not(.single-wcb_speaker) #primary {
   padding-bottom: 2rem;
@@ -627,3 +669,15 @@ body.blog article {
   @media (min-width: 992px) {
     .grid_6 {
       width: 50%; } }
+
+body.search #nav-above, body.search #nav-below {
+  margin-top: 4rem; }
+
+body.search #nav-below {
+  margin-bottom: 4rem; }
+
+body.search #nav-above {
+  margin-bottom: 2rem; }
+
+body.search article:nth-child(even) {
+  background-color: #f4f4f4; }
