@@ -24,6 +24,12 @@
 			text-decoration: none;
 			text-transform: uppercase;
 
+			&:hover, &:active, &focus {
+
+				color: $green;
+
+			}
+
 		}
 
 	}
