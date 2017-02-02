@@ -55,7 +55,11 @@ body.home #after-header-widgets {
 	
 }
 
-body.page:not(.home) .entry-header, body.archive .page-header, body.single-post .entry-header, body.single-wcb_speaker .entry-header {
+body.page:not(.home) .entry-header,
+body.archive .page-header,
+body.single-post .entry-header,
+body.single-wcb_speaker .entry-header,
+body.search .page-header {
 
 	padding: 100px 0 50px;
 	background-image: $hero;
@@ -97,7 +101,8 @@ body.archive .page-title {
 }
 
 
-body.blog, body.single:not(.single-post):not(.single-wcb_speaker) {
+body.blog,
+body.single:not(.single-post):not(.single-wcb_speaker) {
 
 	#before-content-widgets {
 		
