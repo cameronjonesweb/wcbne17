@@ -12,7 +12,6 @@ body.home #primary,
 body.single-post article > .entry-content,
 body.single-wcb_speaker article > .entry-content,
 body.archive article,
-body.search article,
 body.page article > .entry-content, 
 body.single:not(.single-post):not(.single-wcb_speaker) #primary {
 
@@ -25,7 +24,8 @@ body.single:not(.single-post):not(.single-wcb_speaker) #primary {
 
 #content .site-navigation, #comments,
 body.single footer.entry-meta,
-#secondary {
+#secondary,
+body.search article > * {
 	
 	@extend .wrap;
 

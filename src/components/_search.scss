@@ -18,9 +18,16 @@ body.search {
 
 	}
 
-	article:nth-child(even) {
+	article {
 
-		background-color: $grey;
+		padding-bottom: $gutter_y;
+		padding-top: $gutter_y;
+
+		&:nth-child(even) {
+
+			background-color: $grey;
+
+		}
 
 	}
 
