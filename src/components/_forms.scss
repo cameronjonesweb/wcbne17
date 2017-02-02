@@ -1,16 +1,16 @@
-input {
+input, #s {
 	
 	padding: .75em 1em;
 
 }
 
-.contact-form {
+body .contact-form {
 
 	input[type=text], input[type=email], textarea, select {
 		
 		@extend input;
 
-		width: 80% !important;
+		width: 80%;
 
 	}
 
