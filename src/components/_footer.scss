@@ -5,12 +5,12 @@
 	.site-info {
 
 		background: $darkblue;
-		padding: 30px 0;
+		padding: $gutter_y 0;
 		text-align: centre;
 
 		@include mq( $bp_desk ) {
 
-			padding: 40px;
+			padding: $gutter_y * 1.5;
 
 		}
 
@@ -20,7 +20,7 @@
 			display: inline-block;
 			font-size: 18px;
 			font-weight: bold;
-			margin: 0 25px;
+			margin: $gutter_y / 2 $gutter_x / 2;
 			text-decoration: none;
 			text-transform: uppercase;
 
