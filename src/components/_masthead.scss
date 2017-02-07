@@ -8,47 +8,139 @@
 	a {
 		
 		color: #fff;
+		text-decoration: none;
 		
 	}
 	
 	hgroup {
 	
-		width: 30%;
 		display: inline-block;
 		margin-right: -4px;
+		position: absolute;
+		vertical-align: top;
+		width: 50%;
+
+		@include mq( $bp_lap ) {
+
+			position: relative;
+			width: 30%;
+
+		}
 		
 	}
 
 	.site-navigation {
 		
-		width: 70%;
+		width: 100%;
 		display: inline-block;
 		float: none;
 		margin-right: -4px;
 		text-align: right;
+		vertical-align: top;
+
+		@include mq( $bp_lap ) {
+
+			vertical-align: middle;
+			width: 70%;
+
+		}
+
+		ul {
+
+			background-colour: $green;
+			margin-left: 0;
+			margin-top: 1rem;
+
+			@include mq( $bp_lap ) {
+
+				background-colour: transparent;
+				margin-top: 0;
+
+			}
+
+		}
 	
 	}
 
 	li {
 		
 		float: none;
-		display: inline-block;
-		border-bottom: 3px solid transparent;
-		text-align: left;
-		margin-left: $gutter_x;
-		margin-right: $gutter_x;
-	
-		&.current-menu-item, &:hover {
-		
-			border-color: $green;
-		
+		list-style: none;
+
+		@include mq( $bp_lap ) {
+
+			display: inline-block;
+			border-bottom: 3px solid transparent;
+			text-align: left;
+			margin-left: $gutter_x;
+			margin-right: $gutter_x;
+
+			&:last-child {
+
+				margin-right: 0;
+
+			}
+
+		}
+
+		&.current-menu-item, &:hover, &:focus, &:active {
+
+			@include mq( $bp_lap ) {
+			
+				border-color: $green;
+
+			}
+			
+		}
+
+		a {
+
+			display: block;
+			padding: $gutter_y / 2 $gutter_x / 2;
+
+			@include mq( $bp_lap ) {
+
+				display: inline;
+				padding: 0;
+
+			}
+
 		}
 	
 	}
 
 	.site-title {
 
-		font-size: 2rem;
+		display: none;
+
+		&:before {
+
+			content: url('https://raw.githubusercontent.com/cameronjonesweb/wcbne17/master/src/img/masthead-logo.png');
+
+		}
+
+	}
+
+	.menu-toggle {
+
+		color: $green;
+	    font-size: 1em;
+	    padding-right: 2.5rem;
+	    right: 0;
+
+	    &:after {
+
+	    	content: "";
+		    position: absolute;
+		    display: block;
+		    height: 0;
+		    top: 50%;
+		    margin-top: -0.66rem;
+		    right: 0;
+		    box-shadow: 0 0 0 1px $green, 0 7px 0 1px $green, 0 14px 0 1px $green;
+		    width: 1em;
+
+	    }
 
 	}
 	
