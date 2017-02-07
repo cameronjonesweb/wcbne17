@@ -111,7 +111,13 @@
 
 	.site-title {
 
-		font-size: 2rem;
+		display: none;
+
+		&:before {
+
+			content: url('https://raw.githubusercontent.com/cameronjonesweb/wcbne17/master/src/img/masthead-logo.png');
+
+		}
 
 	}
 
