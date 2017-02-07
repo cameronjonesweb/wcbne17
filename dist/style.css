@@ -486,28 +486,79 @@ body.single-wcb_sponsor #before-content-widgets:after {
   width: 100%;
   position: absolute; }
   #masthead a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
   #masthead hgroup {
-    width: 30%;
     display: inline-block;
-    margin-right: -4px; }
+    margin-right: -4px;
+    position: absolute;
+    vertical-align: top;
+    width: 50%; }
+    @media (min-width: 768px) {
+      #masthead hgroup {
+        position: relative;
+        width: 30%; } }
   #masthead .site-navigation {
-    width: 70%;
+    width: 100%;
     display: inline-block;
     float: none;
     margin-right: -4px;
-    text-align: right; }
+    text-align: right;
+    vertical-align: top; }
+    @media (min-width: 768px) {
+      #masthead .site-navigation {
+        vertical-align: middle;
+        width: 70%; } }
+    #masthead .site-navigation ul {
+      background-color: #5cd3bd;
+      margin-left: 0;
+      margin-top: 1rem; }
+      @media (min-width: 768px) {
+        #masthead .site-navigation ul {
+          background-color: transparent;
+          margin-top: 0; } }
   #masthead li {
     float: none;
-    display: inline-block;
-    border-bottom: 3px solid transparent;
-    text-align: left;
-    margin-left: 3rem;
-    margin-right: 3rem; }
-    #masthead li.current-menu-item, #masthead li:hover {
-      border-color: #5cd3bd; }
+    list-style: none; }
+    @media (min-width: 768px) {
+      #masthead li {
+        display: inline-block;
+        border-bottom: 3px solid transparent;
+        text-align: left;
+        margin-left: 3rem;
+        margin-right: 3rem; }
+        #masthead li:last-child {
+          margin-right: 0; } }
+    @media (min-width: 768px) {
+      #masthead li.current-menu-item, #masthead li:hover, #masthead li:focus, #masthead li:active {
+        border-color: #5cd3bd; } }
+    #masthead li a {
+      display: block;
+      padding: 1rem 1.5rem; }
+      @media (min-width: 768px) {
+        #masthead li a {
+          display: inline;
+          padding: 0; } }
   #masthead .site-title {
-    font-size: 2rem; }
+    display: none; }
+    #masthead .site-title:before {
+      content: url("https://raw.githubusercontent.com/cameronjonesweb/wcbne17/master/src/img/masthead-logo.png"); }
+  #masthead .menu-toggle {
+    color: #5cd3bd;
+    font-size: 1em;
+    padding-right: 2.5rem;
+    right: 0; }
+    #masthead .menu-toggle:after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 0;
+      top: 50%;
+      margin-top: -0.66rem;
+      right: 0;
+      -webkit-box-shadow: 0 0 0 1px #5cd3bd, 0 7px 0 1px #5cd3bd, 0 14px 0 1px #5cd3bd;
+              box-shadow: 0 0 0 1px #5cd3bd, 0 7px 0 1px #5cd3bd, 0 14px 0 1px #5cd3bd;
+      width: 1em; }
 
 @media (min-width: 992px) {
   .wcorg-organizers .wcorg-organizer .wcorg-organizer-description {
