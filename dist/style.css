@@ -1,5 +1,6 @@
 *, *:before, *:after {
   position: relative;
+  background-repeat: no-repeat;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -150,7 +151,7 @@ body.blog article {
   position: relative;
   text-decoration: none;
   text-transform: uppercase; }
-  @media (min-width: 768px) {
+  @media (min-width: 617px) {
     .box {
       padding: 2.5em 3em; } }
   .box:visited {
@@ -169,7 +170,7 @@ body.blog article {
     opacity: .1;
     position: absolute;
     top: .7em; }
-    @media (min-width: 768px) {
+    @media (min-width: 617px) {
       .box:before {
         font-size: 6.5em;
         left: .41em;
@@ -274,7 +275,7 @@ body.blog article {
   margin-right: -5px;
   padding-left: 0 !important;
   vertical-align: top; }
-  @media (min-width: 768px) {
+  @media (min-width: 617px) {
     #subscribe-email {
       width: 80% !important; } }
   #subscribe-email input {
@@ -284,7 +285,7 @@ body.blog article {
   margin-bottom: 0;
   padding-left: 0 !important;
   vertical-align: top; }
-  @media (min-width: 768px) {
+  @media (min-width: 617px) {
     #subscribe-submit {
       width: 20% !important; } }
   #subscribe-submit input[type^="submit"] {
@@ -392,7 +393,7 @@ body.home #after-header-widgets {
     width: 100%; }
   body.home #after-header-widgets h1 {
     font-size: 75px; }
-    @media (min-width: 768px) {
+    @media (min-width: 617px) {
       body.home #after-header-widgets h1 {
         font-size: 150px; } }
     @media (min-width: 992px) {
@@ -492,9 +493,9 @@ body.single-wcb_sponsor #before-content-widgets:after {
     display: inline-block;
     margin-right: -4px;
     position: absolute;
-    vertical-align: top;
+    vertical-align: middle;
     width: 50%; }
-    @media (min-width: 768px) {
+    @media (min-width: 617px) {
       #masthead hgroup {
         position: relative;
         width: 30%; } }
@@ -504,23 +505,22 @@ body.single-wcb_sponsor #before-content-widgets:after {
     float: none;
     margin-right: -4px;
     text-align: right;
-    vertical-align: top; }
-    @media (min-width: 768px) {
+    vertical-align: middle; }
+    @media (min-width: 617px) {
       #masthead .site-navigation {
-        vertical-align: middle;
         width: 70%; } }
     #masthead .site-navigation ul {
       background-color: #5cd3bd;
       margin-left: 0;
       margin-top: 1rem; }
-      @media (min-width: 768px) {
+      @media (min-width: 617px) {
         #masthead .site-navigation ul {
           background-color: transparent;
           margin-top: 0; } }
   #masthead li {
     float: none;
     list-style: none; }
-    @media (min-width: 768px) {
+    @media (min-width: 617px) {
       #masthead li {
         display: inline-block;
         border-bottom: 3px solid transparent;
@@ -529,20 +529,31 @@ body.single-wcb_sponsor #before-content-widgets:after {
         margin-right: 3rem; }
         #masthead li:last-child {
           margin-right: 0; } }
-    @media (min-width: 768px) {
+    @media (min-width: 617px) {
       #masthead li.current-menu-item, #masthead li:hover, #masthead li:focus, #masthead li:active {
         border-color: #5cd3bd; } }
     #masthead li a {
       display: block;
       padding: 1rem 1.5rem; }
-      @media (min-width: 768px) {
+      @media (min-width: 617px) {
         #masthead li a {
           display: inline;
           padding: 0; } }
   #masthead .site-title {
-    display: none; }
+    line-height: 0;
+    z-index: 5; }
+    #masthead .site-title a {
+      display: none; }
     #masthead .site-title:before {
-      content: url("https://raw.githubusercontent.com/cameronjonesweb/wcbne17/master/src/img/masthead-logo.png"); }
+      background-image: url("https://raw.githubusercontent.com/cameronjonesweb/wcbne17/master/src/img/masthead-logo.png");
+      background-position: left center;
+      background-size: contain;
+      content: "";
+      display: block;
+      height: 0.66em; }
+      @media (min-width: 617px) {
+        #masthead .site-title:before {
+          background-size: 171px 36px; } }
   #masthead .menu-toggle {
     color: #5cd3bd;
     font-size: 1em;
@@ -595,7 +606,7 @@ body.search article {
     padding: 2em;
     text-decoration: none;
     width: 80%; }
-    @media (min-width: 768px) {
+    @media (min-width: 617px) {
       .widget.wcb_widget_sponsors .sponsor-logo {
         width: 33.333%; } }
     @media (min-width: 992px) {
