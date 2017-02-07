@@ -17,7 +17,7 @@
 		display: inline-block;
 		margin-right: -4px;
 		position: absolute;
-		vertical-align: top;
+		vertical-align: middle;
 		width: 50%;
 
 		@include mq( $bp_lap ) {
@@ -36,11 +36,10 @@
 		float: none;
 		margin-right: -4px;
 		text-align: right;
-		vertical-align: top;
+		vertical-align: middle;
 
 		@include mq( $bp_lap ) {
 
-			vertical-align: middle;
 			width: 70%;
 
 		}
@@ -111,11 +110,29 @@
 
 	.site-title {
 
-		display: none;
+		line-height: 0;
+		z-index: 5;
+
+		a {
+
+			display: none;
+
+		}
 
 		&:before {
 
-			content: url('https://raw.githubusercontent.com/cameronjonesweb/wcbne17/master/src/img/masthead-logo.png');
+			background-image: url('https://raw.githubusercontent.com/cameronjonesweb/wcbne17/master/src/img/masthead-logo.png');
+			background-position: left centre;
+			background-size: contain;
+			content: "";
+			display: block;
+			height: 0.66em;
+
+			@include mq( $bp_lap ) {
+
+				background-size: 171px 36px;
+
+			}
 
 		}
 
