@@ -1,13 +1,22 @@
 .wcorg-organizers {
 	
-	display: flex;
-	flex-direction: row-reverse;
-	flex-wrap: wrap-reverse;
-	
 	.wcorg-organizer {
 		
-		flex: 1;
-		flex-basis: 33%;
+		h2 {
+
+			@extend h3;
+
+		}
+
+		.wcorg-organizer-description {
+
+			@include mq( $bp_desk ) {
+
+				max-width: 70%;
+
+			}
+
+		}
 		
 	}
 	

@@ -1,0 +1,34 @@
+body.search {
+	
+	#nav-above, #nav-below {
+
+		margin-top: $gutter_y * 2;
+
+	}
+
+	#nav-below {
+
+		margin-bottom: $gutter_y * 2;
+
+	}
+
+	#nav-above {
+
+		margin-bottom: $gutter_y;
+
+	}
+
+	article {
+
+		padding-bottom: $gutter_y;
+		padding-top: $gutter_y;
+
+		&:nth-child(even) {
+
+			background-color: $grey;
+
+		}
+
+	}
+
+}
