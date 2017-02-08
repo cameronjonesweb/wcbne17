@@ -2,4 +2,70 @@
 
 	margin-bottom: 0;
 
+	> * {
+
+		@extend .wrap;
+
+	}
+
+	.widget-title {
+
+		@extend .wrap;
+		
+		@extend h2;
+
+		padding-top: $gutter_y;
+		text-align: center;
+
+	}
+
+}
+
+.widget_recent_entries {
+	
+	ul {
+
+		list-style-type: none;
+		margin: 0;
+
+	}
+
+	li {
+
+		display: inline-block;
+		padding: $gutter_y / 2 $gutter_x / 2;
+		vertical-align: top;
+		width: 100%;
+
+		@include mq( $bp_lap ){
+
+			margin-right: -4px;
+			width: 33.3333%;
+		
+		}
+
+	}
+
+	a {
+
+		@extend h4;
+
+	}
+
+	.post-date {
+
+		display: block;
+
+		&:before {
+
+			content: "\f145";
+			display: inline-block;
+			font-family: 'Dashicons';
+			margin-right: 0.5em;
+			vertical-align: bottom;
+
+		}
+
+	}
+
 }
