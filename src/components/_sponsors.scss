@@ -4,14 +4,6 @@
 	@extend .band--large;
 	padding-top: 0 !important;
 
-	.widget-title {
-
-		@extend .wrap;
-		@extend h2;
-		text-align: center;
-
-	}
-
 	.sponsor-logo {
 
 		background-color: $white;

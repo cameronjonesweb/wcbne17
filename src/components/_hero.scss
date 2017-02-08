@@ -4,7 +4,7 @@ body.home #after-header-widgets {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -20,6 +20,13 @@ body.home #after-header-widgets {
 	h1 {
 		
 		font-size: 75px;
+		font-weight: 300;
+
+		b {
+
+			font-weight: 600;
+
+		}
 
 		@include mq( $bp_lap ) {
 
