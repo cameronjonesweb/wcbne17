@@ -40,6 +40,19 @@
 
 		}
 
+
+		.sprite--heart {
+
+			@include sprite( 2, 2 );
+
+		}
+
+		.sprite--megaphone {
+
+			@include sprite( 2, 3 );
+
+		}
+
 	}
 
 

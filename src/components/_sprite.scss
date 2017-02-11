@@ -13,4 +13,16 @@
 
 	}
 
+	&--heart {
+
+		@include sprite( 1, 2 );
+
+	}
+
+	&--megaphone {
+
+		@include sprite( 1, 3 );
+
+	}
+
 }
