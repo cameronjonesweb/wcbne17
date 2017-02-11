@@ -16,6 +16,7 @@
 		margin: 1em;
 		padding: 2em;
 		text-decoration: none;
+		vertical-align: middle;
 		width: 80%;
 
 		@include mq( $bp_lap ) {

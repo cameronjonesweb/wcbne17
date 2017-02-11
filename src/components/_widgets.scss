@@ -2,7 +2,7 @@
 
 	margin-bottom: 0;
 
-	> * {
+	> *:not(.textwidget) {
 
 		@extend .wrap;
 
@@ -34,6 +34,7 @@
 
 		display: inline-block;
 		padding: $gutter_y / 2 $gutter_x / 2;
+		margin-bottom: $gutter_y;
 		vertical-align: top;
 		width: 100%;
 
