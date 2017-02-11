@@ -119,18 +119,21 @@
 
 		}
 
-		&:before {
+		a {
 
 			background-image: url('https://raw.githubusercontent.com/cameronjonesweb/wcbne17/master/src/img/masthead-logo.png');
 			background-position: left centre;
 			background-size: contain;
 			content: "";
-			display: block;
+			display: inline-block;
 			height: 0.66em;
+			max-width: 100%;
+			text-indent: -90210px;
 
 			@include mq( $bp_lap ) {
 
 				background-size: 171px 36px;
+				width: 171px;
 
 			}
 
