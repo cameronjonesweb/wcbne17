@@ -69,36 +69,6 @@ h6, [id^="footer-widget-2"] .widget-title {
   font-weight: 900;
   text-transform: uppercase; }
 
-.button, #subscribe-submit input[type^="submit"], input[type=submit] {
-  padding: 1rem 3rem;
-  background: #5cd3bd;
-  border: 2px solid #5cd3bd;
-  display: inline-block;
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  text-shadow: none; }
-  .button:visited, #subscribe-submit input[type^="submit"]:visited, input[type=submit]:visited {
-    color: #fff; }
-  .button:hover, #subscribe-submit input[type^="submit"]:hover, input[type=submit]:hover, .button:active, #subscribe-submit input[type^="submit"]:active, input[type=submit]:active {
-    color: #5cd3bd;
-    background: transparent; }
-  .button--ghost {
-    background: transparent; }
-    .button--ghost:hover, .button--ghost:active {
-      background-color: #5cd3bd;
-      color: #fff; }
-  .button--white {
-    border-color: #fff;
-    color: #fff;
-    background-color: transparent; }
-    .button--white:visited {
-      color: #fff; }
-    .button--white:hover, .button--white:active {
-      color: #5cd3bd;
-      background-color: #fff; }
-
 .band {
   padding-bottom: 2em;
   padding-top: 2em; }
@@ -196,6 +166,10 @@ body.blog article {
       width: 5em; }
     .box:hover .sprite--chat, .box:active .sprite--chat {
       background-position: -100px 0px; }
+    .box:hover .sprite--heart, .box:active .sprite--heart {
+      background-position: -100px -100px; }
+    .box:hover .sprite--megaphone, .box:active .sprite--megaphone {
+      background-position: -100px -200px; }
   .box:before {
     content: attr(title);
     display: inline-block;
@@ -224,6 +198,36 @@ body.blog article {
       width: 4em;
       -webkit-transition: width .2s ease;
       transition: width .2s ease; }
+
+.button, #subscribe-submit input[type^="submit"], input[type=submit] {
+  padding: 1rem 3rem;
+  background: #5cd3bd;
+  border: 2px solid #5cd3bd;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: none; }
+  .button:visited, #subscribe-submit input[type^="submit"]:visited, input[type=submit]:visited {
+    color: #fff; }
+  .button:hover, #subscribe-submit input[type^="submit"]:hover, input[type=submit]:hover, .button:active, #subscribe-submit input[type^="submit"]:active, input[type=submit]:active {
+    color: #5cd3bd;
+    background: transparent; }
+  .button--ghost {
+    background: transparent; }
+    .button--ghost:hover, .button--ghost:active {
+      background-color: #5cd3bd;
+      color: #fff; }
+  .button--white {
+    border-color: #fff;
+    color: #fff;
+    background-color: transparent; }
+    .button--white:visited {
+      color: #fff; }
+    .button--white:hover, .button--white:active {
+      color: #5cd3bd;
+      background-color: #fff; }
 
 @media (min-width: 992px) {
   .callout__primary {
@@ -638,6 +642,10 @@ body.search article {
   width: 100px; }
   .sprite--chat {
     background-position: 0px 0px; }
+  .sprite--heart {
+    background-position: 0px -100px; }
+  .sprite--megaphone {
+    background-position: 0px -200px; }
 
 .widget-area.front-page .widget {
   margin-bottom: 0; }
