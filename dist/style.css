@@ -69,36 +69,6 @@ h6, [id^="footer-widget-2"] .widget-title {
   font-weight: 900;
   text-transform: uppercase; }
 
-.button, #subscribe-submit input[type^="submit"], input[type=submit] {
-  padding: 1rem 3rem;
-  background: #5cd3bd;
-  border: 2px solid #5cd3bd;
-  display: inline-block;
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  text-shadow: none; }
-  .button:visited, #subscribe-submit input[type^="submit"]:visited, input[type=submit]:visited {
-    color: #fff; }
-  .button:hover, #subscribe-submit input[type^="submit"]:hover, input[type=submit]:hover, .button:active, #subscribe-submit input[type^="submit"]:active, input[type=submit]:active {
-    color: #5cd3bd;
-    background: transparent; }
-  .button--ghost {
-    background: transparent; }
-    .button--ghost:hover, .button--ghost:active {
-      background-color: #5cd3bd;
-      color: #fff; }
-  .button--white {
-    border-color: #fff;
-    color: #fff;
-    background-color: transparent; }
-    .button--white:visited {
-      color: #fff; }
-    .button--white:hover, .button--white:active {
-      color: #5cd3bd;
-      background-color: #fff; }
-
 .band {
   padding-bottom: 2em;
   padding-top: 2em; }
@@ -229,6 +199,36 @@ body.blog article {
       -webkit-transition: width .2s ease;
       transition: width .2s ease; }
 
+.button, #subscribe-submit input[type^="submit"], input[type=submit] {
+  padding: 1rem 3rem;
+  background: #5cd3bd;
+  border: 2px solid #5cd3bd;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: none; }
+  .button:visited, #subscribe-submit input[type^="submit"]:visited, input[type=submit]:visited {
+    color: #fff; }
+  .button:hover, #subscribe-submit input[type^="submit"]:hover, input[type=submit]:hover, .button:active, #subscribe-submit input[type^="submit"]:active, input[type=submit]:active {
+    color: #5cd3bd;
+    background: transparent; }
+  .button--ghost {
+    background: transparent; }
+    .button--ghost:hover, .button--ghost:active {
+      background-color: #5cd3bd;
+      color: #fff; }
+  .button--white {
+    border-color: #fff;
+    color: #fff;
+    background-color: transparent; }
+    .button--white:visited {
+      color: #fff; }
+    .button--white:hover, .button--white:active {
+      color: #5cd3bd;
+      background-color: #fff; }
+
 @media (min-width: 992px) {
   .callout__primary {
     padding-right: 12em; } }
@@ -259,7 +259,7 @@ body.blog article {
         color: #5cd3bd; }
 
 .site-footer {
-  background-image: url("http://i63.tinypic.com/bjagr6.png");
+  background-image: url("https://raw.githubusercontent.com/cameronjonesweb/wcbne17/master/src/img/brisbane-city.png");
   background-position: bottom center;
   background-repeat: no-repeat;
   padding-bottom: 0 !important; }
