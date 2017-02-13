@@ -25,3 +25,36 @@ input[type=submit] {
 	text-shadow: none;
 
 }
+
+input[type=checkbox],
+body .contact-form input[type=checkbox] {
+
+	border: 2px solid $dark-grey;
+    -webkit-appearance: none;
+    border-radius: 2px;
+    margin-bottom: 0;
+    padding: 6px;
+    position: relative;
+    vertical-align: baseline;
+	
+	&:checked:before {
+
+		content: "\f147";
+	    font-family: Dashicons;
+	    font-size: 30px;
+	    left: -75%;
+	    position: absolute;
+	    top: -75%;
+
+	}
+
+}
+
+input[type=radio],
+body .contact-form input[type=radio] {
+	
+	@extend input[type=checkbox];
+
+	border-radius: 50%;
+	
+}
