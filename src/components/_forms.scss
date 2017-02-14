@@ -39,6 +39,7 @@ body .contact-form input[type=checkbox] {
 	
 	&:checked:before {
 
+		color: $green;
 		content: "\f147";
 	    font-family: Dashicons;
 	    font-size: 30px;
@@ -56,5 +57,11 @@ body .contact-form input[type=radio] {
 	@extend input[type=checkbox];
 
 	border-radius: 50%;
+
+}
+
+body label.grunion-checkbox-multiple-label {
 	
+	display: inline-block;
+
 }
