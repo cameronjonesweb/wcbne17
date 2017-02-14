@@ -199,7 +199,7 @@ body.blog article {
       -webkit-transition: width .2s ease;
       transition: width .2s ease; }
 
-.button, #subscribe-submit input[type^="submit"], input[type=submit] {
+.button, #subscribe-submit input[type^="submit"], #subscribe-submit body .contact-form textarea[type^="submit"], body .contact-form #subscribe-submit textarea[type^="submit"], #subscribe-submit body .contact-form select[type^="submit"], body .contact-form #subscribe-submit select[type^="submit"], input[type=submit], body .contact-form input[type=submit][type=text], body .contact-form input[type=submit][type=email], body .contact-form textarea[type=submit], body .contact-form select[type=submit] {
   padding: 1rem 3rem;
   background: #5cd3bd;
   border: 2px solid #5cd3bd;
@@ -209,9 +209,9 @@ body.blog article {
   text-decoration: none;
   font-weight: bold;
   text-shadow: none; }
-  .button:visited, #subscribe-submit input[type^="submit"]:visited, input[type=submit]:visited {
+  .button:visited, #subscribe-submit input[type^="submit"]:visited, #subscribe-submit body .contact-form textarea[type^="submit"]:visited, body .contact-form #subscribe-submit textarea[type^="submit"]:visited, #subscribe-submit body .contact-form select[type^="submit"]:visited, body .contact-form #subscribe-submit select[type^="submit"]:visited, input[type=submit]:visited, body .contact-form input[type=submit][type=text]:visited, body .contact-form input[type=submit][type=email]:visited, body .contact-form textarea[type=submit]:visited, body .contact-form select[type=submit]:visited {
     color: #fff; }
-  .button:hover, #subscribe-submit input[type^="submit"]:hover, input[type=submit]:hover, .button:active, #subscribe-submit input[type^="submit"]:active, input[type=submit]:active {
+  .button:hover, #subscribe-submit input[type^="submit"]:hover, #subscribe-submit body .contact-form textarea[type^="submit"]:hover, body .contact-form #subscribe-submit textarea[type^="submit"]:hover, #subscribe-submit body .contact-form select[type^="submit"]:hover, body .contact-form #subscribe-submit select[type^="submit"]:hover, input[type=submit]:hover, body .contact-form input[type=submit][type=text]:hover, body .contact-form input[type=submit][type=email]:hover, body .contact-form textarea[type=submit]:hover, body .contact-form select[type=submit]:hover, .button:active, #subscribe-submit input[type^="submit"]:active, #subscribe-submit body .contact-form textarea[type^="submit"]:active, body .contact-form #subscribe-submit textarea[type^="submit"]:active, #subscribe-submit body .contact-form select[type^="submit"]:active, body .contact-form #subscribe-submit select[type^="submit"]:active, input[type=submit]:active, body .contact-form input[type=submit][type=text]:active, body .contact-form input[type=submit][type=email]:active, body .contact-form textarea[type=submit]:active, body .contact-form select[type=submit]:active {
     color: #5cd3bd;
     background: transparent; }
   .button--ghost {
@@ -286,7 +286,7 @@ body.blog article {
   @media (min-width: 617px) {
     #subscribe-email {
       width: 80% !important; } }
-  #subscribe-email input {
+  #subscribe-email input, #subscribe-email body .contact-form textarea, body .contact-form #subscribe-email textarea, #subscribe-email body .contact-form select, body .contact-form #subscribe-email select {
     width: 100% !important; }
 
 #subscribe-submit {
@@ -296,7 +296,7 @@ body.blog article {
   @media (min-width: 617px) {
     #subscribe-submit {
       width: 20% !important; } }
-  #subscribe-submit input[type^="submit"] {
+  #subscribe-submit input[type^="submit"], #subscribe-submit body .contact-form textarea[type^="submit"], body .contact-form #subscribe-submit textarea[type^="submit"], #subscribe-submit body .contact-form select[type^="submit"], body .contact-form #subscribe-submit select[type^="submit"] {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
     -webkit-border-radius: 0 !important;
@@ -332,15 +332,47 @@ body.blog article {
   [id^="footer-widget-2"] a:hover {
     color: #5cd3bd !important; }
 
-input, input[type=text], input[type=email], textarea {
+input, body .contact-form input[type=text], body .contact-form input[type=email], body .contact-form textarea, body .contact-form select, #s {
   padding: .75em 1em; }
 
-input[type=submit] {
+body .contact-form input[type=text], body .contact-form textarea[type=text], body .contact-form select[type=text], body .contact-form input[type=email], body .contact-form textarea[type=email], body .contact-form select[type=email], body .contact-form textarea, body .contact-form select {
+  width: 80%; }
+
+input[type=submit], body .contact-form input[type=submit][type=text], body .contact-form input[type=submit][type=email], body .contact-form textarea[type=submit], body .contact-form select[type=submit] {
   -webkit-border-radius: 0;
           border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
   text-shadow: none; }
+
+input[type=checkbox], body .contact-form input[type=checkbox][type=text], body .contact-form input[type=checkbox][type=email], body .contact-form textarea[type=checkbox], body .contact-form select[type=checkbox], input[type=radio],
+body .contact-form input[type=radio], body .contact-form textarea[type=radio], body .contact-form select[type=radio],
+body .contact-form input[type=checkbox], body .contact-form textarea[type=checkbox], body .contact-form select[type=checkbox], body .contact-form input[type=radio], body .contact-form textarea[type=radio], body .contact-form select[type=radio] {
+  border: 2px solid #4a4a4a;
+  -webkit-appearance: none;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  margin-bottom: 0;
+  padding: 6px;
+  position: relative;
+  vertical-align: baseline; }
+  input[type=checkbox]:checked:before, body .contact-form textarea[type=checkbox]:checked:before, body .contact-form select[type=checkbox]:checked:before, input[type=radio]:checked:before, body .contact-form textarea[type=radio]:checked:before, body .contact-form select[type=radio]:checked:before,
+  body .contact-form input[type=checkbox]:checked:before, body .contact-form textarea[type=checkbox]:checked:before, body .contact-form select[type=checkbox]:checked:before, body .contact-form input[type=radio]:checked:before, body .contact-form textarea[type=radio]:checked:before, body .contact-form select[type=radio]:checked:before {
+    color: #5cd3bd;
+    content: "\f147";
+    font-family: Dashicons;
+    font-size: 30px;
+    left: -75%;
+    position: absolute;
+    top: -75%; }
+
+input[type=radio], body .contact-form input[type=radio][type=text], body .contact-form input[type=radio][type=email], body .contact-form textarea[type=radio], body .contact-form select[type=radio],
+body .contact-form input[type=radio], body .contact-form textarea[type=radio], body .contact-form select[type=radio] {
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+body label.grunion-checkbox-multiple-label {
+  display: inline-block; }
 
 .grid_6 {
   display: inline-block;
