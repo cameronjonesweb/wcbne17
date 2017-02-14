@@ -1,6 +1,18 @@
-input, input[type=text], input[type=email], textarea {
-
+input, #s {
+	
 	padding: .75em 1em;
+
+}
+
+body .contact-form {
+
+	input[type=text], input[type=email], textarea, select {
+		
+		@extend input;
+
+		width: 80%;
+
+	}
 
 }
 
@@ -11,5 +23,45 @@ input[type=submit] {
 	border-radius: 0;
 	box-shadow: none;
 	text-shadow: none;
+
+}
+
+input[type=checkbox],
+body .contact-form input[type=checkbox] {
+
+	border: 2px solid $dark-grey;
+    -webkit-appearance: none;
+    border-radius: 2px;
+    margin-bottom: 0;
+    padding: 6px;
+    position: relative;
+    vertical-align: baseline;
+	
+	&:checked:before {
+
+		color: $green;
+		content: "\f147";
+	    font-family: Dashicons;
+	    font-size: 30px;
+	    left: -75%;
+	    position: absolute;
+	    top: -75%;
+
+	}
+
+}
+
+input[type=radio],
+body .contact-form input[type=radio] {
+	
+	@extend input[type=checkbox];
+
+	border-radius: 50%;
+
+}
+
+body label.grunion-checkbox-multiple-label {
+	
+	display: inline-block;
 
 }
