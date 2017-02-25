@@ -1,15 +1,28 @@
 body.home #after-header-widgets {
-	
-	background-image: $hero;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
+
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	text-align: center;
 	width: 100%;
 	color: $white;
+
+	// Actual image, pos:fixed to reduce repaint lag
+	&:before {
+
+		background-image: $hero;
+		background-position: center;
+		background-size: cover;
+		content: "";
+		display: block;
+		height: 100%;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+
+	}
 	
 	aside {
 	
@@ -21,6 +34,7 @@ body.home #after-header-widgets {
 		
 		font-size: 75px;
 		font-weight: 300;
+		line-height: 1;
 
 		b {
 
@@ -45,18 +59,29 @@ body.home #after-header-widgets {
 	h2 {
 	
 		font-size: 30px;
+		margin-bottom: 1em;
 		
 	}
 
-	&:before {
+	// Content within hero
+	#text-3 {
+
+		z-index: 2;
+		position: relative;
+
+	}
+
+	// Tint/overlay
+	&:after {
 	
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,50,0.3);
+	    content: "";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(0,0,50,0.3);
+	    z-index: 0;
 	
 	}
 	
@@ -157,5 +182,13 @@ body.blog #before-content-widgets:after {
 body.single-wcb_sponsor #before-content-widgets:after {
 
 	content: "Sponsors";
+
+}
+
+
+// Set a default background colour to hide the hero
+#main {
+
+	background-color: $white;
 
 }
