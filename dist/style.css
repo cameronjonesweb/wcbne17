@@ -413,10 +413,6 @@ h6, [id^="footer-widget-2"] .widget-title {
   text-transform: uppercase; }
 
 body.home #after-header-widgets {
-  background-image: url(https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/14963293_818811204888544_7171333292064415941_n.jpg?oh=9d3bce540d8134f041963dd28e210196&oe=58C5474F);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -429,11 +425,24 @@ body.home #after-header-widgets {
   text-align: center;
   width: 100%;
   color: #fff; }
+  body.home #after-header-widgets:before {
+    background-image: url(https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/14963293_818811204888544_7171333292064415941_n.jpg?oh=9d3bce540d8134f041963dd28e210196&oe=58C5474F);
+    background-position: center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1; }
   body.home #after-header-widgets aside {
     width: 100%; }
   body.home #after-header-widgets h1 {
     font-size: 75px;
-    font-weight: 300; }
+    font-weight: 300;
+    line-height: 1; }
     body.home #after-header-widgets h1 b {
       font-weight: 600; }
     @media (min-width: 617px) {
@@ -443,15 +452,20 @@ body.home #after-header-widgets {
       body.home #after-header-widgets h1 {
         font-size: 235px; } }
   body.home #after-header-widgets h2, body.home #after-header-widgets .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget body.home #after-header-widgets .widget-title {
-    font-size: 30px; }
-  body.home #after-header-widgets:before {
+    font-size: 30px;
+    margin-bottom: 1em; }
+  body.home #after-header-widgets #text-3 {
+    z-index: 2;
+    position: relative; }
+  body.home #after-header-widgets:after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 50, 0.3); }
+    background: rgba(0, 0, 50, 0.3);
+    z-index: 0; }
 
 body.page:not(.home) .entry-header,
 body.archive .page-header,
@@ -503,6 +517,9 @@ body.blog #before-content-widgets:after {
 
 body.single-wcb_sponsor #before-content-widgets:after {
   content: "Sponsors"; }
+
+#main {
+  background-color: #fff; }
 
 .layout {
   display: block;
