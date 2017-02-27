@@ -53,6 +53,7 @@
 			@include mq( $bp_lap ) {
 
 				background-colour: transparent;
+				margin-right: -$gutter_x;
 				margin-top: 0;
 
 			}
@@ -73,12 +74,6 @@
 			text-align: left;
 			margin-left: $gutter_x;
 			margin-right: $gutter_x;
-
-			&:last-child {
-
-				margin-right: 0;
-
-			}
 
 		}
 
