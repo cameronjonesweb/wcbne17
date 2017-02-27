@@ -16,8 +16,8 @@
 		background-color: $green;
 		color: $white;
 
-		a,
-		a:visited {
+		a:not(.button),
+		a:not(.button):visited {
 
 			color: inherit;
 
