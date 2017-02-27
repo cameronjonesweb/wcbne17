@@ -69,7 +69,7 @@ h6, [id^="footer-widget-2"] .widget-title {
   font-weight: 900;
   text-transform: uppercase; }
 
-.band {
+.band, .widget.wcb_widget_sponsors {
   padding-bottom: 2em;
   padding-top: 2em; }
   .band--large, .site-footer, .widget.wcb_widget_sponsors {
@@ -78,8 +78,8 @@ h6, [id^="footer-widget-2"] .widget-title {
   .band--primary {
     background-color: #5cd3bd;
     color: #fff; }
-    .band--primary a,
-    .band--primary a:visited {
+    .band--primary a:not(.button):not(#subscribe-submit input[type^="submit"]):not(input[type=submit]),
+    .band--primary a:not(.button):not(#subscribe-submit input[type^="submit"]):not(input[type=submit]):visited {
       color: inherit; }
   .band--secondary, .site-footer {
     background-color: #19293a;
@@ -121,7 +121,7 @@ h6, [id^="footer-widget-2"] .widget-title {
       -webkit-transform: rotate(-2deg);
           -ms-transform: rotate(-2deg);
               transform: rotate(-2deg); } }
-  .band--grey, .widget.wcb_widget_sponsors {
+  .band--grey {
     background-color: #f4f4f4;
     color: #4a4a4a; }
 
@@ -199,7 +199,7 @@ body.blog article {
       -webkit-transition: width .2s ease;
       transition: width .2s ease; }
 
-.button, #subscribe-submit input[type^="submit"], #subscribe-submit body .contact-form textarea[type^="submit"], body .contact-form #subscribe-submit textarea[type^="submit"], #subscribe-submit body .contact-form select[type^="submit"], body .contact-form #subscribe-submit select[type^="submit"], input[type=submit], body .contact-form input[type=submit][type=text], body .contact-form input[type=submit][type=email], body .contact-form textarea[type=submit], body .contact-form select[type=submit] {
+.button, #subscribe-submit input[type^="submit"], input[type=submit] {
   padding: 1rem 3rem;
   background: #5cd3bd;
   border: 2px solid #5cd3bd;
@@ -209,9 +209,9 @@ body.blog article {
   text-decoration: none;
   font-weight: bold;
   text-shadow: none; }
-  .button:visited, #subscribe-submit input[type^="submit"]:visited, #subscribe-submit body .contact-form textarea[type^="submit"]:visited, body .contact-form #subscribe-submit textarea[type^="submit"]:visited, #subscribe-submit body .contact-form select[type^="submit"]:visited, body .contact-form #subscribe-submit select[type^="submit"]:visited, input[type=submit]:visited, body .contact-form input[type=submit][type=text]:visited, body .contact-form input[type=submit][type=email]:visited, body .contact-form textarea[type=submit]:visited, body .contact-form select[type=submit]:visited {
+  .button:visited, #subscribe-submit input[type^="submit"]:visited, input[type=submit]:visited {
     color: #fff; }
-  .button:hover, #subscribe-submit input[type^="submit"]:hover, #subscribe-submit body .contact-form textarea[type^="submit"]:hover, body .contact-form #subscribe-submit textarea[type^="submit"]:hover, #subscribe-submit body .contact-form select[type^="submit"]:hover, body .contact-form #subscribe-submit select[type^="submit"]:hover, input[type=submit]:hover, body .contact-form input[type=submit][type=text]:hover, body .contact-form input[type=submit][type=email]:hover, body .contact-form textarea[type=submit]:hover, body .contact-form select[type=submit]:hover, .button:active, #subscribe-submit input[type^="submit"]:active, #subscribe-submit body .contact-form textarea[type^="submit"]:active, body .contact-form #subscribe-submit textarea[type^="submit"]:active, #subscribe-submit body .contact-form select[type^="submit"]:active, body .contact-form #subscribe-submit select[type^="submit"]:active, input[type=submit]:active, body .contact-form input[type=submit][type=text]:active, body .contact-form input[type=submit][type=email]:active, body .contact-form textarea[type=submit]:active, body .contact-form select[type=submit]:active {
+  .button:hover, #subscribe-submit input[type^="submit"]:hover, input[type=submit]:hover, .button:active, #subscribe-submit input[type^="submit"]:active, input[type=submit]:active {
     color: #5cd3bd;
     background: transparent; }
   .button--ghost {
@@ -286,7 +286,7 @@ body.blog article {
   @media (min-width: 617px) {
     #subscribe-email {
       width: 80% !important; } }
-  #subscribe-email input, #subscribe-email body .contact-form textarea, body .contact-form #subscribe-email textarea, #subscribe-email body .contact-form select, body .contact-form #subscribe-email select {
+  #subscribe-email input {
     width: 100% !important; }
 
 #subscribe-submit {
@@ -296,7 +296,7 @@ body.blog article {
   @media (min-width: 617px) {
     #subscribe-submit {
       width: 20% !important; } }
-  #subscribe-submit input[type^="submit"], #subscribe-submit body .contact-form textarea[type^="submit"], body .contact-form #subscribe-submit textarea[type^="submit"], #subscribe-submit body .contact-form select[type^="submit"], body .contact-form #subscribe-submit select[type^="submit"] {
+  #subscribe-submit input[type^="submit"] {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
     -webkit-border-radius: 0 !important;
@@ -332,32 +332,33 @@ body.blog article {
   [id^="footer-widget-2"] a:hover {
     color: #5cd3bd !important; }
 
-input, body .contact-form input[type=text], body .contact-form input[type=email], body .contact-form textarea, body .contact-form select, #s {
+input, #s {
   padding: .75em 1em; }
 
-body .contact-form input[type=text], body .contact-form textarea[type=text], body .contact-form select[type=text], body .contact-form input[type=email], body .contact-form textarea[type=email], body .contact-form select[type=email], body .contact-form textarea, body .contact-form select {
+body .contact-form input[type=text], body .contact-form input[type=email], body .contact-form textarea, body .contact-form select {
+  padding: .75em 1em;
   width: 80%; }
 
-input[type=submit], body .contact-form input[type=submit][type=text], body .contact-form input[type=submit][type=email], body .contact-form textarea[type=submit], body .contact-form select[type=submit] {
+input[type=submit] {
   -webkit-border-radius: 0;
           border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
   text-shadow: none; }
 
-input[type=checkbox], body .contact-form input[type=checkbox][type=text], body .contact-form input[type=checkbox][type=email], body .contact-form textarea[type=checkbox], body .contact-form select[type=checkbox], input[type=radio],
-body .contact-form input[type=radio], body .contact-form textarea[type=radio], body .contact-form select[type=radio],
-body .contact-form input[type=checkbox], body .contact-form textarea[type=checkbox], body .contact-form select[type=checkbox], body .contact-form input[type=radio], body .contact-form textarea[type=radio], body .contact-form select[type=radio] {
+input[type=checkbox], input[type=radio],
+body .contact-form input[type=radio],
+body .contact-form input[type=checkbox], body .contact-form input[type=radio] {
   border: 2px solid #4a4a4a;
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
   -webkit-border-radius: 2px;
           border-radius: 2px;
   margin-bottom: 0;
   padding: 6px;
   position: relative;
   vertical-align: baseline; }
-  input[type=checkbox]:checked:before, body .contact-form textarea[type=checkbox]:checked:before, body .contact-form select[type=checkbox]:checked:before, input[type=radio]:checked:before, body .contact-form textarea[type=radio]:checked:before, body .contact-form select[type=radio]:checked:before,
-  body .contact-form input[type=checkbox]:checked:before, body .contact-form textarea[type=checkbox]:checked:before, body .contact-form select[type=checkbox]:checked:before, body .contact-form input[type=radio]:checked:before, body .contact-form textarea[type=radio]:checked:before, body .contact-form select[type=radio]:checked:before {
+  input[type=checkbox]:checked:before, input[type=radio]:checked:before,
+  body .contact-form input[type=checkbox]:checked:before, body .contact-form input[type=radio]:checked:before {
     color: #5cd3bd;
     content: "\f147";
     font-family: Dashicons;
@@ -366,8 +367,8 @@ body .contact-form input[type=checkbox], body .contact-form textarea[type=checkb
     position: absolute;
     top: -75%; }
 
-input[type=radio], body .contact-form input[type=radio][type=text], body .contact-form input[type=radio][type=email], body .contact-form textarea[type=radio], body .contact-form select[type=radio],
-body .contact-form input[type=radio], body .contact-form textarea[type=radio], body .contact-form select[type=radio] {
+input[type=radio],
+body .contact-form input[type=radio] {
   -webkit-border-radius: 50%;
           border-radius: 50%; }
 
@@ -413,18 +414,20 @@ h6, [id^="footer-widget-2"] .widget-title {
   text-transform: uppercase; }
 
 body.home #after-header-widgets {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
   text-align: center;
-  width: 100%;
-  color: #fff; }
+  width: 100%; }
   body.home #after-header-widgets:before {
     background-image: url(https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/14963293_818811204888544_7171333292064415941_n.jpg?oh=9d3bce540d8134f041963dd28e210196&oe=58C5474F);
     background-position: center;
@@ -438,9 +441,11 @@ body.home #after-header-widgets {
     width: 100%;
     z-index: -1; }
   body.home #after-header-widgets aside {
-    width: 100%; }
+    width: 100%;
+    z-index: 2;
+    position: relative; }
   body.home #after-header-widgets h1 {
-    font-size: 75px;
+    font-size: 7rem;
     font-weight: 300;
     line-height: 1; }
     body.home #after-header-widgets h1 b {
@@ -454,9 +459,6 @@ body.home #after-header-widgets {
   body.home #after-header-widgets h2, body.home #after-header-widgets .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget body.home #after-header-widgets .widget-title {
     font-size: 30px;
     margin-bottom: 1em; }
-  body.home #after-header-widgets #text-3 {
-    z-index: 2;
-    position: relative; }
   body.home #after-header-widgets:after {
     content: "";
     position: absolute;
@@ -576,6 +578,7 @@ body.single-wcb_sponsor #before-content-widgets:after {
       @media (min-width: 617px) {
         #masthead .site-navigation ul {
           background-color: transparent;
+          margin-right: -3rem;
           margin-top: 0; } }
   #masthead li {
     float: none;
@@ -586,9 +589,7 @@ body.single-wcb_sponsor #before-content-widgets:after {
         border-bottom: 3px solid transparent;
         text-align: left;
         margin-left: 3rem;
-        margin-right: 3rem; }
-        #masthead li:last-child {
-          margin-right: 0; } }
+        margin-right: 3rem; } }
     @media (min-width: 617px) {
       #masthead li.current-menu-item, #masthead li:hover, #masthead li:focus, #masthead li:active {
         border-color: #5cd3bd; } }
