@@ -11,6 +11,7 @@ This is the stylesheet for the website for [WordCamp Brisbane 2017](https://2017
 * [Cameron Jones](https://profiles.wordpress.org/cameronjonesweb)
 * [Hannah Malcolm](https://profiles.wordpress.org/hannahmalcolm)
 * [Robert Wilde](https://profiles.wordpress.org/wildetech)
+* [Peter Bui](https://profiles.wordpress.org/pbwebdev)
 
 ## Contributing
 
@@ -24,3 +25,7 @@ We welcome patches from the community.
 ## License
 
 This project is licensed under the GPL v2.0
+
+## Other Contributors
+
+* [Ken Ware Photos](https://www.facebook.com/kenwarephotos)

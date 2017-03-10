@@ -429,7 +429,7 @@ body.home #after-header-widgets {
   text-align: center;
   width: 100%; }
   body.home #after-header-widgets:before {
-    background-image: url(https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/14963293_818811204888544_7171333292064415941_n.jpg?oh=9d3bce540d8134f041963dd28e210196&oe=58C5474F);
+    background-image: url(https://2017.brisbane.wordcamp.org/files/2017/03/69A8086-Edit-1.jpg);
     background-position: center;
     background-size: cover;
     content: "";
@@ -441,9 +441,16 @@ body.home #after-header-widgets {
     width: 100%;
     z-index: -1; }
   body.home #after-header-widgets aside {
+    position: relative;
     width: 100%;
-    z-index: 2;
-    position: relative; }
+    z-index: 2; }
+    body.home #after-header-widgets aside:after {
+      content: "Image courtesy of Ken Ware Photos";
+      position: absolute;
+      bottom: -2rem;
+      right: 0;
+      padding: 2rem 3rem 0;
+      font-size: 1rem; }
   body.home #after-header-widgets h1 {
     font-size: 7rem;
     font-weight: 300;
@@ -475,7 +482,7 @@ body.single-post .entry-header,
 body.single-wcb_speaker .entry-header,
 body.search .page-header {
   padding: 100px 0 50px;
-  background-image: url(https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/14963293_818811204888544_7171333292064415941_n.jpg?oh=9d3bce540d8134f041963dd28e210196&oe=58C5474F);
+  background-image: url(https://2017.brisbane.wordcamp.org/files/2017/03/69A8086-Edit-1.jpg);
   background-size: cover;
   background-position: center;
   color: #fff; }
@@ -495,7 +502,7 @@ body.search .page-header {
 body.blog #before-content-widgets,
 body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets {
   padding: 100px 0 50px;
-  background-image: url(https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/14963293_818811204888544_7171333292064415941_n.jpg?oh=9d3bce540d8134f041963dd28e210196&oe=58C5474F);
+  background-image: url(https://2017.brisbane.wordcamp.org/files/2017/03/69A8086-Edit-1.jpg);
   background-size: cover;
   background-position: center;
   color: #fff; }
