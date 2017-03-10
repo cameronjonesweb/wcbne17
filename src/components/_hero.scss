@@ -28,9 +28,20 @@ body.home #after-header-widgets {
 	
 	aside {
 	
-		width: 100%;
-    z-index: 2;
 		position: relative;
+		width: 100%;
+    	z-index: 2;
+
+    	&:after {
+
+    		content: "Image courtesy of Ken Ware Photos";
+    		position: absolute;
+    		bottom: -$gutter_y;
+    		right: 0;
+    		padding: $gutter_y $gutter_x 0;
+    		font-size: 1rem;
+
+    	}
 		
 	}
 	
