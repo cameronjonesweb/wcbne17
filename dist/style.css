@@ -429,7 +429,7 @@ body.home #after-header-widgets {
   text-align: center;
   width: 100%; }
   body.home #after-header-widgets:before {
-    background-image: url(https://2017.brisbane.wordcamp.org/files/2017/03/69A8086-Edit-1.jpg);
+    background-image: url(https://2017.brisbane.wordcamp.org/files/2017/03/Story-Bridge-Ken-Ware-Photos-WordCamp-Brisbane-2017.jpg);
     background-position: center;
     background-size: cover;
     content: "";
@@ -482,7 +482,7 @@ body.single-post .entry-header,
 body.single-wcb_speaker .entry-header,
 body.search .page-header {
   padding: 100px 0 50px;
-  background-image: url(https://2017.brisbane.wordcamp.org/files/2017/03/69A8086-Edit-1.jpg);
+  background-image: url(https://2017.brisbane.wordcamp.org/files/2017/03/Story-Bridge-Ken-Ware-Photos-WordCamp-Brisbane-2017.jpg);
   background-size: cover;
   background-position: center;
   color: #fff; }
@@ -502,7 +502,7 @@ body.search .page-header {
 body.blog #before-content-widgets,
 body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets {
   padding: 100px 0 50px;
-  background-image: url(https://2017.brisbane.wordcamp.org/files/2017/03/69A8086-Edit-1.jpg);
+  background-image: url(https://2017.brisbane.wordcamp.org/files/2017/03/Story-Bridge-Ken-Ware-Photos-WordCamp-Brisbane-2017.jpg);
   background-size: cover;
   background-position: center;
   color: #fff; }
