@@ -108,11 +108,23 @@ body.single-post .entry-header,
 body.single-wcb_speaker .entry-header,
 body.search .page-header {
 
-	padding: 100px 0 50px;
+	padding: 50% 0 4em;
 	background-image: $hero;
 	background-size: cover;
 	background-position: center;
 	color: #fff;
+
+	@include mq( $bp_lap ) {
+
+		padding-top: 30%;
+
+	}
+
+	@include mq( $bp_desk ) {
+
+		padding-top: 20%;
+
+	}
 	
 	&:before {
 	
@@ -134,7 +146,7 @@ body.search .page-header {
 
 	.entry-title {
 
-		@extend h3;
+		@extend h1;
 
 	}
 	
@@ -143,7 +155,7 @@ body.search .page-header {
 
 body.archive .page-title {
 	
-	@extend h3;
+	@extend h1;
 
 }
 
@@ -153,15 +165,27 @@ body.single:not(.single-post):not(.single-wcb_speaker) {
 
 	#before-content-widgets {
 		
-		padding: 100px 0 50px;
+		padding: 50% 0 4em;
 		background-image: $hero;
 		background-size: cover;
 		background-position: center;
 		color: $white;
+
+		@include mq( $bp_lap ) {
+
+			padding-top: 30%;
+
+		}
+
+		@include mq( $bp_desk ) {
+
+			padding-top: 20%;
+
+		}
 		
 		&:after {
 
-			@extend h3;
+			@extend h1;
 
 			@extend .wrap;
 			
