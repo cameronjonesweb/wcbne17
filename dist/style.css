@@ -39,11 +39,22 @@ body.home #primary {
   overflow: auto;
   overflow-x: hidden; }
 
-h1 {
+h1, body.page:not(.home) .entry-header .entry-title,
+body.archive .page-header .entry-title,
+body.single-post .entry-header .entry-title,
+body.single-wcb_speaker .entry-header .entry-title,
+body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
+body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after {
   font-size: 3.5rem;
-  font-weight: 900; }
+  font-weight: 900;
+  line-height: 1.1em; }
   @media (min-width: 617px) {
-    h1 {
+    h1, body.page:not(.home) .entry-header .entry-title,
+    body.archive .page-header .entry-title,
+    body.single-post .entry-header .entry-title,
+    body.single-wcb_speaker .entry-header .entry-title,
+    body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
+    body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after {
       font-size: 5em; } }
 
 h2, .widget-area.front-page .widget .widget-title,
@@ -56,24 +67,14 @@ h2, .widget-area.front-page .widget .widget-title,
     .h2 {
       font-size: 3.5em; } }
 
-h3, .comments-title, body.page:not(.home) .entry-header .entry-title,
-body.archive .page-header .entry-title,
-body.single-post .entry-header .entry-title,
-body.single-wcb_speaker .entry-header .entry-title,
-body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
-body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .wcorg-organizers .wcorg-organizer h2, .wcorg-organizers .wcorg-organizer .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget .wcorg-organizers .wcorg-organizer .widget-title,
+h3, .comments-title, .wcorg-organizers .wcorg-organizer h2, .wcorg-organizers .wcorg-organizer .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget .wcorg-organizers .wcorg-organizer .widget-title,
 .h3,
 .site-footer .widget-title {
   font-size: 1.5em;
   font-weight: 900;
   text-transform: uppercase; }
   @media (min-width: 617px) {
-    h3, .comments-title, body.page:not(.home) .entry-header .entry-title,
-    body.archive .page-header .entry-title,
-    body.single-post .entry-header .entry-title,
-    body.single-wcb_speaker .entry-header .entry-title,
-    body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
-    body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .wcorg-organizers .wcorg-organizer h2, .wcorg-organizers .wcorg-organizer .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget .wcorg-organizers .wcorg-organizer .widget-title,
+    h3, .comments-title, .wcorg-organizers .wcorg-organizer h2, .wcorg-organizers .wcorg-organizer .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget .wcorg-organizers .wcorg-organizer .widget-title,
     .h3,
     .site-footer .widget-title {
       font-size: 2.1em; } }
@@ -406,11 +407,22 @@ body label.grunion-checkbox-multiple-label {
     .grid_6 {
       width: 50%; } }
 
-h1 {
+h1, body.page:not(.home) .entry-header .entry-title,
+body.archive .page-header .entry-title,
+body.single-post .entry-header .entry-title,
+body.single-wcb_speaker .entry-header .entry-title,
+body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
+body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after {
   font-size: 3.5rem;
-  font-weight: 900; }
+  font-weight: 900;
+  line-height: 1.1em; }
   @media (min-width: 617px) {
-    h1 {
+    h1, body.page:not(.home) .entry-header .entry-title,
+    body.archive .page-header .entry-title,
+    body.single-post .entry-header .entry-title,
+    body.single-wcb_speaker .entry-header .entry-title,
+    body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
+    body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after {
       font-size: 5em; } }
 
 h2, .widget-area.front-page .widget .widget-title,
@@ -423,24 +435,14 @@ h2, .widget-area.front-page .widget .widget-title,
     .h2 {
       font-size: 3.5em; } }
 
-h3, .comments-title, body.page:not(.home) .entry-header .entry-title,
-body.archive .page-header .entry-title,
-body.single-post .entry-header .entry-title,
-body.single-wcb_speaker .entry-header .entry-title,
-body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
-body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .wcorg-organizers .wcorg-organizer h2, .wcorg-organizers .wcorg-organizer .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget .wcorg-organizers .wcorg-organizer .widget-title,
+h3, .comments-title, .wcorg-organizers .wcorg-organizer h2, .wcorg-organizers .wcorg-organizer .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget .wcorg-organizers .wcorg-organizer .widget-title,
 .h3,
 .site-footer .widget-title {
   font-size: 1.5em;
   font-weight: 900;
   text-transform: uppercase; }
   @media (min-width: 617px) {
-    h3, .comments-title, body.page:not(.home) .entry-header .entry-title,
-    body.archive .page-header .entry-title,
-    body.single-post .entry-header .entry-title,
-    body.single-wcb_speaker .entry-header .entry-title,
-    body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
-    body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .wcorg-organizers .wcorg-organizer h2, .wcorg-organizers .wcorg-organizer .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget .wcorg-organizers .wcorg-organizer .widget-title,
+    h3, .comments-title, .wcorg-organizers .wcorg-organizer h2, .wcorg-organizers .wcorg-organizer .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget .wcorg-organizers .wcorg-organizer .widget-title,
     .h3,
     .site-footer .widget-title {
       font-size: 2.1em; } }
@@ -519,17 +521,57 @@ body.home #after-header-widgets {
     body.search body.home #after-header-widgets aside article > * {
       position: relative;
       z-index: 2; }
-  body.home #after-header-widgets h1 {
+  body.home #after-header-widgets h1, body.home #after-header-widgets body.page:not(.home) .entry-header .entry-title, body.page:not(.home) .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+  body.archive .page-header .entry-title,
+  body.archive .page-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+  body.single-post .entry-header .entry-title,
+  body.single-post .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+  body.single-wcb_speaker .entry-header .entry-title,
+  body.single-wcb_speaker .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+  body.search .page-header .entry-title,
+  body.search .page-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets body.archive .page-title, body.archive body.home #after-header-widgets .page-title, body.home #after-header-widgets body.blog #before-content-widgets:after, body.blog body.home #after-header-widgets #before-content-widgets:after, body.home #after-header-widgets
+  body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after,
+  body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets #before-content-widgets:after {
     font-size: 7rem;
     font-weight: 300;
     line-height: 1; }
-    body.home #after-header-widgets h1 b {
+    body.home #after-header-widgets h1 b, body.home #after-header-widgets body.page:not(.home) .entry-header .entry-title b, body.page:not(.home) .entry-header body.home #after-header-widgets .entry-title b, body.home #after-header-widgets
+    body.archive .page-header .entry-title b,
+    body.archive .page-header body.home #after-header-widgets .entry-title b, body.home #after-header-widgets
+    body.single-post .entry-header .entry-title b,
+    body.single-post .entry-header body.home #after-header-widgets .entry-title b, body.home #after-header-widgets
+    body.single-wcb_speaker .entry-header .entry-title b,
+    body.single-wcb_speaker .entry-header body.home #after-header-widgets .entry-title b, body.home #after-header-widgets
+    body.search .page-header .entry-title b,
+    body.search .page-header body.home #after-header-widgets .entry-title b, body.home #after-header-widgets body.archive .page-title b, body.archive body.home #after-header-widgets .page-title b, body.home #after-header-widgets body.blog #before-content-widgets:after b, body.blog body.home #after-header-widgets #before-content-widgets:after b, body.home #after-header-widgets
+    body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after b,
+    body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets #before-content-widgets:after b {
       font-weight: 600; }
     @media (min-width: 617px) {
-      body.home #after-header-widgets h1 {
+      body.home #after-header-widgets h1, body.home #after-header-widgets body.page:not(.home) .entry-header .entry-title, body.page:not(.home) .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+      body.archive .page-header .entry-title,
+      body.archive .page-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+      body.single-post .entry-header .entry-title,
+      body.single-post .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+      body.single-wcb_speaker .entry-header .entry-title,
+      body.single-wcb_speaker .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+      body.search .page-header .entry-title,
+      body.search .page-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets body.archive .page-title, body.archive body.home #after-header-widgets .page-title, body.home #after-header-widgets body.blog #before-content-widgets:after, body.blog body.home #after-header-widgets #before-content-widgets:after, body.home #after-header-widgets
+      body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after,
+      body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets #before-content-widgets:after {
         font-size: 150px; } }
     @media (min-width: 992px) {
-      body.home #after-header-widgets h1 {
+      body.home #after-header-widgets h1, body.home #after-header-widgets body.page:not(.home) .entry-header .entry-title, body.page:not(.home) .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+      body.archive .page-header .entry-title,
+      body.archive .page-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+      body.single-post .entry-header .entry-title,
+      body.single-post .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+      body.single-wcb_speaker .entry-header .entry-title,
+      body.single-wcb_speaker .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+      body.search .page-header .entry-title,
+      body.search .page-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets body.archive .page-title, body.archive body.home #after-header-widgets .page-title, body.home #after-header-widgets body.blog #before-content-widgets:after, body.blog body.home #after-header-widgets #before-content-widgets:after, body.home #after-header-widgets
+      body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after,
+      body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets #before-content-widgets:after {
         font-size: 235px; } }
   body.home #after-header-widgets h2, body.home #after-header-widgets .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget body.home #after-header-widgets .widget-title {
     font-size: 30px;
@@ -550,11 +592,25 @@ body.archive .page-header,
 body.single-post .entry-header,
 body.single-wcb_speaker .entry-header,
 body.search .page-header {
-  padding: 100px 0 50px;
+  padding: 50% 0 4em;
   background-image: url(https://2017.brisbane.wordcamp.org/files/2017/03/Story-Bridge-Ken-Ware-Photos-WordCamp-Brisbane-2017.jpg);
   background-size: cover;
   background-position: center;
   color: #fff; }
+  @media (min-width: 617px) {
+    body.page:not(.home) .entry-header,
+    body.archive .page-header,
+    body.single-post .entry-header,
+    body.single-wcb_speaker .entry-header,
+    body.search .page-header {
+      padding-top: 30%; } }
+  @media (min-width: 992px) {
+    body.page:not(.home) .entry-header,
+    body.archive .page-header,
+    body.single-post .entry-header,
+    body.single-wcb_speaker .entry-header,
+    body.search .page-header {
+      padding-top: 20%; } }
   body.page:not(.home) .entry-header:before,
   body.archive .page-header:before,
   body.single-post .entry-header:before,
@@ -570,11 +626,19 @@ body.search .page-header {
 
 body.blog #before-content-widgets,
 body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets {
-  padding: 100px 0 50px;
+  padding: 50% 0 4em;
   background-image: url(https://2017.brisbane.wordcamp.org/files/2017/03/Story-Bridge-Ken-Ware-Photos-WordCamp-Brisbane-2017.jpg);
   background-size: cover;
   background-position: center;
   color: #fff; }
+  @media (min-width: 617px) {
+    body.blog #before-content-widgets,
+    body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets {
+      padding-top: 30%; } }
+  @media (min-width: 992px) {
+    body.blog #before-content-widgets,
+    body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets {
+      padding-top: 20%; } }
   body.blog #before-content-widgets:after,
   body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after {
     display: block;
@@ -760,7 +824,7 @@ body.search article {
 .widget.wcb_widget_sponsors .sponsor-logo {
   background-color: #fff;
   border-style: solid;
-  border-width: 2px;
+  border-width: 3px;
   border-bottom: none;
   border-left: none;
   border-right: none;
@@ -910,3 +974,15 @@ body.single:not(.single-post):not(.single-wcb_speaker) #primary {
 
 .u-text--center {
   text-align: center; }
+
+.lede, .entry-content > p:first-of-type {
+  font-size: 1.5em;
+  line-height: 1.6;
+  max-width: 38em; }
+
+.entry-content p {
+  max-width: 45em; }
+
+.avatar {
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
