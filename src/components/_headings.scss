@@ -1,7 +1,13 @@
 h1 {
 
-	font-size: 5rem;
+	font-size: 3.5rem;
 	font-weight: 900;
+
+	@include mq( $bp_lap ) {
+
+		font-size: 5em;
+
+	}
 
 }
 
@@ -9,25 +15,43 @@ h1 {
 h2,
 .h2 {
 
-	font-size: 3.5em;
+	font-size: 2.1em;
 	font-weight: 900;
 	text-transform: uppercase;
+
+	@include mq( $bp_lap ) {
+
+		font-size: 3.5em;
+
+	}
 
 }
 
 
 h3,
 .h3 {
-	font-size: 2.1em;
+	font-size: 1.5em;
 	font-weight: 900;
 	text-transform: uppercase;
+
+	@include mq( $bp_lap ) {
+
+		font-size: 2.1em;
+
+	}
 
 }
 
 
 h4 {
 	
-	font-size: 1.5em;
+	font-size: 1em;
+
+	@include mq( $bp_lap ) {
+
+		font-size: 1.5em;
+
+	}
 
 }
 

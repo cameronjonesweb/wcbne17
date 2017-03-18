@@ -84,6 +84,7 @@
 	margin-bottom: 0;
 	padding-left: 0 !important;
 	vertical-align: top;
+	margin-bottom: 1em;
 	
 	@include mq( $bp_lap ) {
 
@@ -96,7 +97,14 @@
 		@extend .button;
 		box-shadow: none !important;
 		border-radius: 0 !important;
-		padding: .95em  1.5em;;
+		padding: .95em  1.5em;
+		width: 100%;
+
+		@include mq( $bp_lap ) {
+
+			width: auto;
+
+		}
 
 	}
 
