@@ -11,11 +11,12 @@
 	.widget-title {
 
 		@extend .wrap;
-		
 		@extend h2;
 
 		padding-top: $gutter_y;
 		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
 
 	}
 
@@ -41,11 +42,11 @@
 	li {
 
 		display: inline-block;
-		padding: 3em 2.5em;
 		margin-bottom: $gutter_y;
+		overflow: hidden;
+		padding: 3em 1em;
 		vertical-align: top;
 		width: 100%;
-
 
 		@media ( max-width: #{ $bp_lap - 1 } ) {
 
@@ -58,10 +59,12 @@
 		}
 
 
-		@include mq( $bp_lap ){
+		@include mq( $bp_lap ) {
 
 			margin-right: -4px;
 			width: 50%;
+			padding-left: 2.5em;
+			padding-right: 2.5em;
 
 			&:nth-of-type( 2n ) {
 
@@ -96,10 +99,17 @@
 			display: inline-block;
 			position: absolute;
 			top: .25em;
-			left: 2.5rem;
+			left: -1rem;
 			opacity: .1;
-			font-size: 4.5em;
+			font-size: 6.5em;
 			text-transform: uppercase;
+
+			@include mq( $bp_lap ) {
+
+				font-size: 4.5em;
+				left: 2.5rem;
+
+			}
 
 		}
 
