@@ -1,5 +1,28 @@
-body.page .entry-content {
-	
-	@extend .wrap;
+.lede {
+
+	font-size: 1.5em;
+	line-height: 1.6;
+	max-width: 38em;
+
+}
+
+
+.entry-content > p:first-of-type {
+
+	@extend .lede;
+
+}
+
+
+.entry-content p {
+
+	max-width: 45em;
+
+}
+
+
+.avatar {
+
+	border-radius: 50%;
 
 }
