@@ -31,12 +31,13 @@
 
 	.site-navigation {
 		
-		width: 100%;
 		display: inline-block;
 		float: none;
+		font-weight: 600;
 		margin-right: -4px;
 		text-align: right;
 		vertical-align: middle;
+		width: 100%;
 
 		@include mq( $bp_lap ) {
 
@@ -70,10 +71,31 @@
 		@include mq( $bp_lap ) {
 
 			display: inline-block;
-			border-bottom: 3px solid transparent;
 			text-align: left;
-			margin-left: $gutter_x;
-			margin-right: $gutter_x;
+			margin-left: ( $gutter_x / 2 );
+			margin-right: ( $gutter_x / 2 );
+
+			a {
+
+				position: relative;
+
+				&:after {
+
+					background-colour: transparent;
+					content: "";
+					display: inline-block;
+					height: 3px;
+					left: $gutter_x;
+					left: 50%;
+					position: absolute;
+					top: 100%;
+					transform: translateX( -50% );
+					transition: width .2s ease;
+					width: 0;
+
+				}
+
+			}
 
 		}
 
@@ -81,7 +103,16 @@
 
 			@include mq( $bp_lap ) {
 			
-				border-color: $green;
+				a {
+
+					&:after {
+
+						background-colour: $green;
+						width: calc( 100% - #{ $gutter_x } );
+
+					}
+
+				}
 
 			}
 			
@@ -90,12 +121,12 @@
 		a {
 
 			display: block;
-			padding: $gutter_y / 2 $gutter_x / 2;
+			padding: ( $gutter_y / 2 )  ( $gutter_x / 2 );
 
 			@include mq( $bp_lap ) {
 
-				display: inline;
-				padding: 0;
+				display: inline-block;
+				padding: ( $gutter_y / 4 )  ( $gutter_x / 2 );
 
 			}
 

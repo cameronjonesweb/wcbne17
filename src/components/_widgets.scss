@@ -22,6 +22,14 @@
 }
 
 .widget_recent_entries {
+
+	padding-top: 4em;
+
+	.widget-title {
+
+		padding-top: 0;
+
+	}
 	
 	ul {
 
@@ -33,15 +41,33 @@
 	li {
 
 		display: inline-block;
-		padding: $gutter_y / 2 $gutter_x / 2;
+		padding: 3em 2.5em;
 		margin-bottom: $gutter_y;
 		vertical-align: top;
 		width: 100%;
 
+
+		@media ( max-width: #{ $bp_lap - 1 } ) {
+
+			+ li {
+
+				border-top: 1px solid $grey;
+
+			}
+
+		}
+
+
 		@include mq( $bp_lap ){
 
 			margin-right: -4px;
-			width: 33.3333%;
+			width: 50%;
+
+			&:nth-of-type( 2n ) {
+
+				border-left: 1px solid $grey;
+
+			}
 		
 		}
 
@@ -50,6 +76,48 @@
 	a {
 
 		@extend h4;
+		display: block;
+		max-width: 16em;
+		padding: 2em 0 0 0;
+		position: static;
+		line-height: 1;
+		font-weight: 900;
+		text-decoration: none;
+
+		&:hover {
+
+			color: $green;
+
+		}
+
+		&:before {
+
+			content: "News";
+			display: inline-block;
+			position: absolute;
+			top: .25em;
+			left: 2.5rem;
+			opacity: .1;
+			font-size: 4.5em;
+			text-transform: uppercase;
+
+		}
+
+
+		&:after {
+
+			@extend .box__link;
+			content: "";
+			margin-bottom: .5em;
+
+		}
+
+
+		&:hover:after {
+
+			width: 5em;
+
+		}
 
 	}
 
