@@ -16,17 +16,25 @@ body.single:not(.single-post):not(.single-wcb_speaker) #primary {
 
 	@extend .wrap;
 
-	padding-bottom: $gutter_y;
-	padding-top: $gutter_y;
+	padding-bottom: ( $gutter_y * 2 );
+	padding-top: ( $gutter_y * 2 );
 
 }
 
-#content .site-navigation, #comments,
+#content .site-navigation,
 body.single footer.entry-meta,
 #secondary,
 body.search article > * {
 	
 	@extend .wrap;
+
+}
+
+
+
+#content .site-navigation {
+
+	margin-bottom: ( $gutter_y * 2 );
 
 }
 
