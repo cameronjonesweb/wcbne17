@@ -61,7 +61,8 @@ h2, .widget-area.front-page .widget .widget-title,
 .h2 {
   font-size: 2.1em;
   font-weight: 900;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 1.1; }
   @media (min-width: 617px) {
     h2, .widget-area.front-page .widget .widget-title,
     .h2 {
@@ -90,10 +91,10 @@ h6, [id^="footer-widget-2"] .widget-title {
   font-weight: 900;
   text-transform: uppercase; }
 
-.band, .widget.wcb_widget_sponsors {
+.band, #comments, .widget.wcb_widget_sponsors {
   padding-bottom: 2em;
   padding-top: 2em; }
-  .band--large, .site-footer, .widget.wcb_widget_sponsors {
+  .band--large, #comments, .site-footer, .widget.wcb_widget_sponsors {
     padding-bottom: 4em;
     padding-top: 4em; }
   .band--primary {
@@ -142,7 +143,7 @@ h6, [id^="footer-widget-2"] .widget-title {
       -webkit-transform: rotate(-2deg);
           -ms-transform: rotate(-2deg);
               transform: rotate(-2deg); } }
-  .band--grey, .widget.wcb_widget_sponsors {
+  .band--grey, #comments, .widget.wcb_widget_sponsors {
     background-color: #f4f4f4;
     color: #4a4a4a; }
 
@@ -378,6 +379,7 @@ body .contact-form input[type=checkbox], body .contact-form input[type=radio] {
   -webkit-border-radius: 2px;
           border-radius: 2px;
   margin-bottom: 0;
+  margin-right: .5em;
   padding: 6px;
   position: relative;
   vertical-align: baseline; }
@@ -429,7 +431,8 @@ h2, .widget-area.front-page .widget .widget-title,
 .h2 {
   font-size: 2.1em;
   font-weight: 900;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 1.1; }
   @media (min-width: 617px) {
     h2, .widget-area.front-page .widget .widget-title,
     .h2 {
@@ -495,7 +498,7 @@ body.home #after-header-widgets {
       right: 0;
       padding: 2rem 3rem;
       font-size: 1rem; }
-    body.home #after-header-widgets aside .wrap, body.home #after-header-widgets aside [id^="footer-widgets"], body.home #after-header-widgets aside body.page:not(.home) .entry-header > *, body.page:not(.home) body.home #after-header-widgets aside .entry-header > *, body.home #after-header-widgets aside
+    body.home #after-header-widgets aside .wrap, body.home #after-header-widgets aside .comment-respond, body.home #after-header-widgets aside [id^="footer-widgets"], body.home #after-header-widgets aside body.page:not(.home) .entry-header > *, body.page:not(.home) body.home #after-header-widgets aside .entry-header > *, body.home #after-header-widgets aside
     body.archive .page-header > *,
     body.archive body.home #after-header-widgets aside .page-header > *, body.home #after-header-widgets aside
     body.single-post .entry-header > *,
@@ -513,7 +516,7 @@ body.home #after-header-widgets {
     body.page article > .entry-content,
     body.page body.home #after-header-widgets aside article > .entry-content, body.home #after-header-widgets aside
     body.single:not(.single-post):not(.single-wcb_speaker) #primary,
-    body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets aside #primary, body.home #after-header-widgets aside #content .site-navigation, #content body.home #after-header-widgets aside .site-navigation, body.home #after-header-widgets aside #comments, body.home #after-header-widgets aside
+    body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets aside #primary, body.home #after-header-widgets aside #content .site-navigation, #content body.home #after-header-widgets aside .site-navigation, body.home #after-header-widgets aside
     body.single footer.entry-meta,
     body.single body.home #after-header-widgets aside footer.entry-meta, body.home #after-header-widgets aside
     #secondary, body.home #after-header-widgets aside
@@ -938,7 +941,7 @@ body.search article {
       margin-right: 0.5em;
       vertical-align: bottom; }
 
-.wrap, [id^="footer-widgets"], body.page:not(.home) .entry-header > *,
+.wrap, .comment-respond, [id^="footer-widgets"], body.page:not(.home) .entry-header > *,
 body.archive .page-header > *,
 body.single-post .entry-header > *,
 body.single-wcb_speaker .entry-header > *,
@@ -947,7 +950,7 @@ body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:a
 body.single-wcb_speaker article > .entry-content,
 body.archive article,
 body.page article > .entry-content,
-body.single:not(.single-post):not(.single-wcb_speaker) #primary, #content .site-navigation, #comments,
+body.single:not(.single-post):not(.single-wcb_speaker) #primary, #content .site-navigation,
 body.single footer.entry-meta,
 #secondary,
 body.search article > * {
@@ -962,8 +965,11 @@ body.single-wcb_speaker article > .entry-content,
 body.archive article,
 body.page article > .entry-content,
 body.single:not(.single-post):not(.single-wcb_speaker) #primary {
-  padding-bottom: 2rem;
-  padding-top: 2rem; }
+  padding-bottom: 4rem;
+  padding-top: 4rem; }
+
+#content .site-navigation {
+  margin-bottom: 4rem; }
 
 .u-line-length {
   max-width: 48em; }
@@ -981,8 +987,21 @@ body.single:not(.single-post):not(.single-wcb_speaker) #primary {
   max-width: 38em; }
 
 .entry-content p {
-  max-width: 45em; }
+  max-width: 55em; }
 
 .avatar {
   -webkit-border-radius: 50%;
           border-radius: 50%; }
+
+.site-content a {
+  -webkit-box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.1em 0 0 currentColor;
+          box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.1em 0 0 currentColor;
+  color: currentColor;
+  text-decoration: none;
+  text-shadow: 0.05em 0.05em 0 #fff, -0.05em 0.05em 0 #fff, 0.1em 0 0 #fff, -0.1em 0 0 #fff; }
+  body.blog article:nth-child(even) .site-content a {
+    -webkit-box-shadow: inset 0 -0.05em 0 0 #f4f4f4, inset 0 -0.1em 0 0 currentColor;
+            box-shadow: inset 0 -0.05em 0 0 #f4f4f4, inset 0 -0.1em 0 0 currentColor;
+    text-shadow: 0.05em 0.05em 0 #f4f4f4, -0.05em 0.05em 0 #f4f4f4, 0.1em 0 0 #f4f4f4, -0.1em 0 0 #f4f4f4; }
+  .site-content a:hover {
+    color: #5cd3bd; }
