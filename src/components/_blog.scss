@@ -49,3 +49,19 @@ body.blog article {
 	}
 
 }
+
+
+#comments {
+
+	@extend .band;
+	@extend .band--grey;
+	@extend .band--large;
+
+}
+
+
+	.comment-respond {
+
+		@extend .wrap;
+
+	}
