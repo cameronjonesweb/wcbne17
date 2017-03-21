@@ -1017,8 +1017,8 @@ body.error404 .entry-content {
           border-radius: 50%; }
 
 .entry-content a,
-#before-content-widgets a,
-.entry-meta a,
+#before-content-widgets .widget_text a:not(.button):not(#subscribe-submit input[type^="submit"]):not(input[type=submit]):not(.box),
+footer.entry-meta a,
 .comments-area a {
   -webkit-box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.1em 0 0 currentColor;
           box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.1em 0 0 currentColor;
@@ -1026,14 +1026,14 @@ body.error404 .entry-content {
   text-decoration: none;
   text-shadow: 0.05em 0.05em 0 #fff, -0.05em 0.05em 0 #fff, 0.1em 0 0 #fff, -0.1em 0 0 #fff; }
   body.blog article:nth-child(even) .entry-content a, body.blog article:nth-child(even)
-  #before-content-widgets a, body.blog article:nth-child(even)
-  .entry-meta a, body.blog article:nth-child(even)
+  #before-content-widgets .widget_text a:not(.button):not(#subscribe-submit input[type^="submit"]):not(input[type=submit]):not(.box), body.blog article:nth-child(even)
+  footer.entry-meta a, body.blog article:nth-child(even)
   .comments-area a {
     -webkit-box-shadow: inset 0 -0.05em 0 0 #f4f4f4, inset 0 -0.1em 0 0 currentColor;
             box-shadow: inset 0 -0.05em 0 0 #f4f4f4, inset 0 -0.1em 0 0 currentColor;
     text-shadow: 0.05em 0.05em 0 #f4f4f4, -0.05em 0.05em 0 #f4f4f4, 0.1em 0 0 #f4f4f4, -0.1em 0 0 #f4f4f4; }
   .entry-content a:hover,
-  #before-content-widgets a:hover,
-  .entry-meta a:hover,
+  #before-content-widgets .widget_text a:not(.button):not(#subscribe-submit input[type^="submit"]):not(input[type=submit]):not(.box):hover,
+  footer.entry-meta a:hover,
   .comments-area a:hover {
-    color: #5cd3bd; }
+    color: #5cd3bd !important; }
