@@ -43,7 +43,8 @@ h1, body.page:not(.home) .entry-header .entry-title,
 body.archive .page-header .entry-title,
 body.single-post .entry-header .entry-title,
 body.single-wcb_speaker .entry-header .entry-title,
-body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
+body.search .page-header .entry-title,
+body.error404 .entry-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
 body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after {
   font-size: 3.5rem;
   font-weight: 900;
@@ -53,7 +54,8 @@ body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:a
     body.archive .page-header .entry-title,
     body.single-post .entry-header .entry-title,
     body.single-wcb_speaker .entry-header .entry-title,
-    body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
+    body.search .page-header .entry-title,
+    body.error404 .entry-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
     body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after {
       font-size: 5em; } }
 
@@ -413,7 +415,8 @@ h1, body.page:not(.home) .entry-header .entry-title,
 body.archive .page-header .entry-title,
 body.single-post .entry-header .entry-title,
 body.single-wcb_speaker .entry-header .entry-title,
-body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
+body.search .page-header .entry-title,
+body.error404 .entry-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
 body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after {
   font-size: 3.5rem;
   font-weight: 900;
@@ -423,7 +426,8 @@ body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:a
     body.archive .page-header .entry-title,
     body.single-post .entry-header .entry-title,
     body.single-wcb_speaker .entry-header .entry-title,
-    body.search .page-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
+    body.search .page-header .entry-title,
+    body.error404 .entry-header .entry-title, body.archive .page-title, body.blog #before-content-widgets:after,
     body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after {
       font-size: 5em; } }
 
@@ -506,7 +510,9 @@ body.home #after-header-widgets {
     body.single-wcb_speaker .entry-header > *,
     body.single-wcb_speaker body.home #after-header-widgets aside .entry-header > *, body.home #after-header-widgets aside
     body.search .page-header > *,
-    body.search body.home #after-header-widgets aside .page-header > *, body.home #after-header-widgets aside body.blog #before-content-widgets:after, body.blog body.home #after-header-widgets aside #before-content-widgets:after, body.home #after-header-widgets aside
+    body.search body.home #after-header-widgets aside .page-header > *, body.home #after-header-widgets aside
+    body.error404 .entry-header > *,
+    body.error404 body.home #after-header-widgets aside .entry-header > *, body.home #after-header-widgets aside body.blog #before-content-widgets:after, body.blog body.home #after-header-widgets aside #before-content-widgets:after, body.home #after-header-widgets aside
     body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after,
     body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets aside #before-content-widgets:after, body.home #after-header-widgets aside .sponsor-level, body.home #after-header-widgets aside .widget-area.front-page .widget > *:not(.textwidget), .widget-area.front-page body.home #after-header-widgets aside .widget > *:not(.textwidget), body.home #after-header-widgets aside .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget body.home #after-header-widgets aside .widget-title, body.home #after-header-widgets aside body.single-post article > .entry-content, body.single-post body.home #after-header-widgets aside article > .entry-content, body.home #after-header-widgets aside
     body.single-wcb_speaker article > .entry-content,
@@ -516,7 +522,9 @@ body.home #after-header-widgets {
     body.page article > .entry-content,
     body.page body.home #after-header-widgets aside article > .entry-content, body.home #after-header-widgets aside
     body.single:not(.single-post):not(.single-wcb_speaker) #primary,
-    body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets aside #primary, body.home #after-header-widgets aside #content .site-navigation, #content body.home #after-header-widgets aside .site-navigation, body.home #after-header-widgets aside
+    body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets aside #primary, body.home #after-header-widgets aside
+    body.error404 .entry-content,
+    body.error404 body.home #after-header-widgets aside .entry-content, body.home #after-header-widgets aside #content .site-navigation, #content body.home #after-header-widgets aside .site-navigation, body.home #after-header-widgets aside
     body.single footer.entry-meta,
     body.single body.home #after-header-widgets aside footer.entry-meta, body.home #after-header-widgets aside
     #secondary, body.home #after-header-widgets aside
@@ -532,7 +540,9 @@ body.home #after-header-widgets {
   body.single-wcb_speaker .entry-header .entry-title,
   body.single-wcb_speaker .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
   body.search .page-header .entry-title,
-  body.search .page-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets body.archive .page-title, body.archive body.home #after-header-widgets .page-title, body.home #after-header-widgets body.blog #before-content-widgets:after, body.blog body.home #after-header-widgets #before-content-widgets:after, body.home #after-header-widgets
+  body.search .page-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+  body.error404 .entry-header .entry-title,
+  body.error404 .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets body.archive .page-title, body.archive body.home #after-header-widgets .page-title, body.home #after-header-widgets body.blog #before-content-widgets:after, body.blog body.home #after-header-widgets #before-content-widgets:after, body.home #after-header-widgets
   body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after,
   body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets #before-content-widgets:after {
     font-size: 7rem;
@@ -546,7 +556,9 @@ body.home #after-header-widgets {
     body.single-wcb_speaker .entry-header .entry-title b,
     body.single-wcb_speaker .entry-header body.home #after-header-widgets .entry-title b, body.home #after-header-widgets
     body.search .page-header .entry-title b,
-    body.search .page-header body.home #after-header-widgets .entry-title b, body.home #after-header-widgets body.archive .page-title b, body.archive body.home #after-header-widgets .page-title b, body.home #after-header-widgets body.blog #before-content-widgets:after b, body.blog body.home #after-header-widgets #before-content-widgets:after b, body.home #after-header-widgets
+    body.search .page-header body.home #after-header-widgets .entry-title b, body.home #after-header-widgets
+    body.error404 .entry-header .entry-title b,
+    body.error404 .entry-header body.home #after-header-widgets .entry-title b, body.home #after-header-widgets body.archive .page-title b, body.archive body.home #after-header-widgets .page-title b, body.home #after-header-widgets body.blog #before-content-widgets:after b, body.blog body.home #after-header-widgets #before-content-widgets:after b, body.home #after-header-widgets
     body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after b,
     body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets #before-content-widgets:after b {
       font-weight: 600; }
@@ -559,7 +571,9 @@ body.home #after-header-widgets {
       body.single-wcb_speaker .entry-header .entry-title,
       body.single-wcb_speaker .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
       body.search .page-header .entry-title,
-      body.search .page-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets body.archive .page-title, body.archive body.home #after-header-widgets .page-title, body.home #after-header-widgets body.blog #before-content-widgets:after, body.blog body.home #after-header-widgets #before-content-widgets:after, body.home #after-header-widgets
+      body.search .page-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+      body.error404 .entry-header .entry-title,
+      body.error404 .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets body.archive .page-title, body.archive body.home #after-header-widgets .page-title, body.home #after-header-widgets body.blog #before-content-widgets:after, body.blog body.home #after-header-widgets #before-content-widgets:after, body.home #after-header-widgets
       body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after,
       body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets #before-content-widgets:after {
         font-size: 150px; } }
@@ -572,7 +586,9 @@ body.home #after-header-widgets {
       body.single-wcb_speaker .entry-header .entry-title,
       body.single-wcb_speaker .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
       body.search .page-header .entry-title,
-      body.search .page-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets body.archive .page-title, body.archive body.home #after-header-widgets .page-title, body.home #after-header-widgets body.blog #before-content-widgets:after, body.blog body.home #after-header-widgets #before-content-widgets:after, body.home #after-header-widgets
+      body.search .page-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets
+      body.error404 .entry-header .entry-title,
+      body.error404 .entry-header body.home #after-header-widgets .entry-title, body.home #after-header-widgets body.archive .page-title, body.archive body.home #after-header-widgets .page-title, body.home #after-header-widgets body.blog #before-content-widgets:after, body.blog body.home #after-header-widgets #before-content-widgets:after, body.home #after-header-widgets
       body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after,
       body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets #before-content-widgets:after {
         font-size: 235px; } }
@@ -594,7 +610,8 @@ body.page:not(.home) .entry-header,
 body.archive .page-header,
 body.single-post .entry-header,
 body.single-wcb_speaker .entry-header,
-body.search .page-header {
+body.search .page-header,
+body.error404 .entry-header {
   padding: 50% 0 4em;
   background-image: url(https://2017.brisbane.wordcamp.org/files/2017/03/Story-Bridge-Ken-Ware-Photos-WordCamp-Brisbane-2017.jpg);
   background-size: cover;
@@ -605,20 +622,23 @@ body.search .page-header {
     body.archive .page-header,
     body.single-post .entry-header,
     body.single-wcb_speaker .entry-header,
-    body.search .page-header {
+    body.search .page-header,
+    body.error404 .entry-header {
       padding-top: 30%; } }
   @media (min-width: 992px) {
     body.page:not(.home) .entry-header,
     body.archive .page-header,
     body.single-post .entry-header,
     body.single-wcb_speaker .entry-header,
-    body.search .page-header {
+    body.search .page-header,
+    body.error404 .entry-header {
       padding-top: 20%; } }
   body.page:not(.home) .entry-header:before,
   body.archive .page-header:before,
   body.single-post .entry-header:before,
   body.single-wcb_speaker .entry-header:before,
-  body.search .page-header:before {
+  body.search .page-header:before,
+  body.error404 .entry-header:before {
     content: "";
     position: absolute;
     top: 0;
@@ -945,12 +965,14 @@ body.search article {
 body.archive .page-header > *,
 body.single-post .entry-header > *,
 body.single-wcb_speaker .entry-header > *,
-body.search .page-header > *, body.blog #before-content-widgets:after,
+body.search .page-header > *,
+body.error404 .entry-header > *, body.blog #before-content-widgets:after,
 body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .sponsor-level, .widget-area.front-page .widget > *:not(.textwidget), .widget-area.front-page .widget .widget-title, body.single-post article > .entry-content,
 body.single-wcb_speaker article > .entry-content,
 body.archive article,
 body.page article > .entry-content,
-body.single:not(.single-post):not(.single-wcb_speaker) #primary, #content .site-navigation,
+body.single:not(.single-post):not(.single-wcb_speaker) #primary,
+body.error404 .entry-content, #content .site-navigation,
 body.single footer.entry-meta,
 #secondary,
 body.search article > * {
@@ -964,7 +986,8 @@ body.single-post article > .entry-content,
 body.single-wcb_speaker article > .entry-content,
 body.archive article,
 body.page article > .entry-content,
-body.single:not(.single-post):not(.single-wcb_speaker) #primary {
+body.single:not(.single-post):not(.single-wcb_speaker) #primary,
+body.error404 .entry-content {
   padding-bottom: 4rem;
   padding-top: 4rem; }
 
