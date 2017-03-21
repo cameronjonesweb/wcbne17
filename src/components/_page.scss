@@ -28,7 +28,10 @@
 }
 
 
-.site-content a {
+.entry-content a,
+#before-content-widgets a,
+.entry-meta a,
+.comments-area a {
 
 	box-shadow: inset 0 -.05em 0 0 $white, inset 0 -.1em 0 0 currentColor;
 	color: currentColor;
