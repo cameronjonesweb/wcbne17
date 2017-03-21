@@ -106,7 +106,8 @@ body.page:not(.home) .entry-header,
 body.archive .page-header,
 body.single-post .entry-header,
 body.single-wcb_speaker .entry-header,
-body.search .page-header {
+body.search .page-header,
+body.error404 .entry-header {
 
 	padding: 50% 0 4em;
 	background-image: $hero;
