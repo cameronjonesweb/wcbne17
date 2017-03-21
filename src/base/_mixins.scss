@@ -15,3 +15,12 @@
 	background-position: #{ -( $icon_height * ( $x - 1 ) ) } #{ -( $icon_width * ( $y - 1) ) };
 
 }
+
+
+@mixin clearfix() {
+	
+	content: "";
+	display: table;
+	clear: both;
+
+}
