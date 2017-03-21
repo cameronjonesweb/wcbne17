@@ -29,8 +29,8 @@
 
 
 .entry-content a,
-#before-content-widgets a,
-.entry-meta a,
+#before-content-widgets .widget_text a:not(.button):not(.box),
+footer.entry-meta a,
 .comments-area a {
 
 	box-shadow: inset 0 -.05em 0 0 $white, inset 0 -.1em 0 0 currentColor;
@@ -47,7 +47,7 @@
 
 	&:hover {
 
-		color: $green;
+		color: $green !important;
 
 	}
 
