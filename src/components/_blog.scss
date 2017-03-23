@@ -57,6 +57,12 @@ body.blog article {
 	@extend .band--grey;
 	@extend .band--large;
 
+	body:not(.single-post) {
+
+		display: none;
+
+	}
+
 }
 
 
