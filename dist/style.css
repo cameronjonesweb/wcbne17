@@ -169,6 +169,9 @@ body.blog article {
     padding-left: 3rem;
     padding-right: 3rem; }
 
+#comments body:not(.single-post) {
+  display: none; }
+
 .box {
   background-color: #fff;
   color: inherit;
