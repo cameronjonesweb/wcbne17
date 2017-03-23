@@ -169,7 +169,7 @@ body.blog article {
     padding-left: 3rem;
     padding-right: 3rem; }
 
-#comments body:not(.single-post) {
+body:not(.single-post) #comments {
   display: none; }
 
 .box {
