@@ -820,9 +820,21 @@ body.single-wcb_sponsor #before-content-widgets:after {
               box-shadow: 0 0 0 1px #5cd3bd, 0 7px 0 1px #5cd3bd, 0 14px 0 1px #5cd3bd;
       width: 1em; }
 
-@media (min-width: 992px) {
-  .wcorg-organizers .wcorg-organizer .wcorg-organizer-description {
-    max-width: 70%; } }
+.wcorg-organizers .wcorg-organizer {
+  margin-bottom: 1em; }
+  .wcorg-organizers .wcorg-organizer:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .wcorg-organizers .wcorg-organizer h2, .wcorg-organizers .wcorg-organizer .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget .wcorg-organizers .wcorg-organizer .widget-title {
+    margin-bottom: .5em;
+    font-size: 3em; }
+  .wcorg-organizers .wcorg-organizer .avatar {
+    margin-bottom: 1em; }
+    @media (min-width: 992px) {
+      .wcorg-organizers .wcorg-organizer .avatar {
+        float: left;
+        margin-right: 2em; } }
 
 body.search #nav-above, body.search #nav-below {
   margin-top: 4rem; }
