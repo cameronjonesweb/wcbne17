@@ -365,9 +365,16 @@ body:not(.single-post) #comments {
 input, #s {
   padding: .75em 1em; }
 
-body .contact-form input[type=text], body .contact-form input[type=email], body .contact-form textarea, body .contact-form select {
+body .contact-form input[type=text], body .contact-form input[type=email], body .contact-form textarea, body .contact-form select,
+.tix_tickets_table input[type=text],
+.tix_tickets_table input[type=email],
+.tix_tickets_table textarea,
+.tix_tickets_table select {
   padding: .75em 1em;
   width: 80%; }
+
+.tix_tickets_table input[type=text], .tix_tickets_table input[type=url], .tix_tickets_table input[type=email], .tix_tickets_table textarea, .tix_tickets_table select {
+  width: 100%; }
 
 input[type=submit] {
   -webkit-border-radius: 0;
@@ -905,6 +912,106 @@ body.search article {
     background-position: 0px -100px; }
   .sprite--megaphone {
     background-position: 0px -200px; }
+
+td,
+th {
+  padding: 1rem 0; }
+  @media (min-width: 617px) {
+    td,
+    th {
+      padding: 2rem 3rem; } }
+
+tr td:first-of-type {
+  padding-top: 1rem; }
+  @media (min-width: 617px) {
+    tr td:first-of-type {
+      padding-top: 2rem; } }
+
+tr td:last-of-type {
+  padding-bottom: 1rem; }
+  @media (min-width: 617px) {
+    tr td:last-of-type {
+      padding-bottom: 2rem; } }
+
+tr td,
+tr th {
+  display: block; }
+
+@media (min-width: 617px) {
+  tr td:first-of-type,
+  tr th:first-of-type {
+    padding-left: 0; }
+  tr td:last-of-type,
+  tr th:last-of-type {
+    padding-right: 0; }
+  tr td,
+  tr th {
+    border-bottom: 1px solid #f4f4f4;
+    display: table-cell; } }
+
+th {
+  text-transform: uppercase;
+  font-weight: 900; }
+
+.page-slug-tickets .entry-content p {
+  max-width: none; }
+
+.tix-column-quantity select {
+  width: 100%; }
+
+.tix_tickets_table th {
+  display: none; }
+  @media (min-width: 617px) {
+    .tix_tickets_table th {
+      display: table-cell; } }
+
+.tix_tickets_table tr td:last-of-type {
+  border-bottom: 1px solid #f4f4f4; }
+
+.tix-column-price:before {
+  content: "Price "; }
+
+.tix-column-remaining:before {
+  content: "Remaining "; }
+
+.tix-column-quantity:before {
+  content: "Quantity "; }
+
+.tix-column-price:before,
+.tix-column-remaining:before,
+.tix-column-quantity:before {
+  font-weight: 900;
+  display: block; }
+  @media (min-width: 617px) {
+    .tix-column-price:before,
+    .tix-column-remaining:before,
+    .tix-column-quantity:before {
+      display: none; } }
+
+.tix-column-price,
+.tix-column-remaining {
+  width: 50%;
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top; }
+  @media (min-width: 617px) {
+    .tix-column-price,
+    .tix-column-remaining {
+      width: auto;
+      display: table-cell;
+      margin-right: 0; } }
+
+.tix-ticket-title {
+  font-size: 1.25em; }
+  .tix-ticket-title b {
+    display: block;
+    text-align: center; }
+  @media (min-width: 617px) {
+    .tix-ticket-title {
+      font-size: initial; }
+      .tix-ticket-title b {
+        display: inline;
+        text-align: left; } }
 
 .widget-area.front-page .widget {
   margin-bottom: 0; }
