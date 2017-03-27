@@ -1,0 +1,198 @@
+td,
+th {
+
+	padding: ( $gutter_y / 2 )  0;
+
+	@include mq( $bp_lap ) {
+
+		padding: $gutter_y $gutter_x;
+
+	}
+
+}
+
+
+tr {
+
+	td:first-of-type {
+
+		padding-top: ( $gutter_y / 2 );
+
+		@include mq( $bp_lap ) {
+
+			padding-top: $gutter_y;
+
+		}
+
+	}
+
+	td:last-of-type {
+
+		padding-bottom: ( $gutter_y / 2 );
+
+		@include mq( $bp_lap ) {
+
+			padding-bottom: $gutter_y;
+
+		}
+
+	}
+
+	td,
+	th {
+
+		display: block;
+
+	}
+
+	@include mq( $bp_lap ) {
+
+		td:first-of-type,
+		th:first-of-type {
+
+			padding-left: 0;
+
+		}
+
+
+		td:last-of-type,
+		th:last-of-type {
+
+			padding-right: 0;
+
+		}
+
+		td ,
+		th {
+
+			border-bottom: 1px solid $grey;
+			display: table-cell;
+
+		}
+
+	}
+
+}
+
+
+th {
+
+	text-transform: uppercase;
+	font-weight: 900;
+
+}
+
+
+
+.page-slug-tickets .entry-content p {
+
+	max-width: none;
+
+}
+
+
+.tix-column-quantity select {
+
+	width: 100%;
+
+}
+
+
+.tix_tickets_table th {
+
+	display: none;
+
+	@include mq( $bp_lap ) {
+
+		display: table-cell;
+
+	}
+
+}
+
+
+.tix_tickets_table tr td:last-of-type {
+
+	border-bottom: 1px solid $grey;
+
+}
+
+
+.tix-column-price:before {
+
+	content: "Price ";
+
+}
+
+.tix-column-remaining:before {
+
+	content: "Remaining ";
+
+}
+
+.tix-column-quantity:before {
+
+	content: "Quantity ";
+
+}
+
+.tix-column-price:before,
+.tix-column-remaining:before,
+.tix-column-quantity:before {
+
+	font-weight: 900;
+	display: block;
+
+	@include mq( $bp_lap ) {
+
+		display: none;
+
+	}
+
+}
+
+
+.tix-column-price,
+.tix-column-remaining {
+
+	width: 50%;
+	display: inline-block;
+	margin-right: -4px;
+	vertical-align: top;
+
+	@include mq( $bp_lap ) {
+
+		width: auto;
+		display: table-cell;
+		margin-right: 0;
+
+	}
+
+}
+
+
+.tix-ticket-title {
+
+	font-size: 1.25em;
+
+	b {
+	
+		display: block;
+		text-align: center;
+
+	}
+
+	@include mq( $bp_lap ) {
+
+		font-size: initial;
+
+		b {
+	
+			display: inline;
+			text-align: left;
+
+		}
+
+	}
+
+}
