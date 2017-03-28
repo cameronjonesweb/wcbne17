@@ -977,16 +977,36 @@ th {
 .tix-column-quantity:before {
   content: "Quantity "; }
 
+.tix-row-total td:last-of-type:before {
+  content: "Total "; }
+
 .tix-column-price:before,
 .tix-column-remaining:before,
-.tix-column-quantity:before {
+.tix-column-quantity:before,
+.tix-row-total td:last-of-type:before {
   font-weight: 900;
   display: block; }
   @media (min-width: 617px) {
     .tix-column-price:before,
     .tix-column-remaining:before,
-    .tix-column-quantity:before {
+    .tix-column-quantity:before,
+    .tix-row-total td:last-of-type:before {
       display: none; } }
+
+.tix-attendee-form td.tix-right {
+  width: 100%; }
+  @media (min-width: 617px) {
+    .tix-attendee-form td.tix-right {
+      width: 60%; } }
+
+.tix-attendee-form td.tix-left {
+  width: 100%; }
+  @media (min-width: 617px) {
+    .tix-attendee-form td.tix-left {
+      width: 40%; } }
+
+body.admin-bar #tix {
+  padding-top: 0; }
 
 .tix-column-price,
 .tix-column-remaining {
@@ -1012,6 +1032,22 @@ th {
       .tix-ticket-title b {
         display: inline;
         text-align: left; } }
+
+.tix-submit select {
+  padding: 1rem;
+  margin-right: 1.5rem;
+  width: 100%;
+  margin-bottom: 2rem; }
+  @media (min-width: 617px) {
+    .tix-submit select {
+      width: auto;
+      margin-bottom: 0; } }
+
+.tix-submit input {
+  width: 100%; }
+  @media (min-width: 617px) {
+    .tix-submit input {
+      width: auto; } }
 
 .widget-area.front-page .widget {
   margin-bottom: 0; }
