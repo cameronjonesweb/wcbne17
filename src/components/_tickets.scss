@@ -136,9 +136,16 @@ th {
 
 }
 
+.tix-row-total td:last-of-type:before {
+
+	content: "Total ";
+
+}
+
 .tix-column-price:before,
 .tix-column-remaining:before,
-.tix-column-quantity:before {
+.tix-column-quantity:before,
+.tix-row-total td:last-of-type:before {
 
 	font-weight: 900;
 	display: block;
@@ -148,6 +155,38 @@ th {
 		display: none;
 
 	}
+
+}
+
+
+.tix-attendee-form td.tix-right {
+
+	width: 100%;
+
+	@include mq( $bp_lap ) {
+
+		width: 60%;
+
+	}
+
+}
+
+.tix-attendee-form td.tix-left {
+
+	width: 100%;
+
+	@include mq( $bp_lap ) {
+
+		width: 40%;
+
+	}
+
+}
+
+
+body.admin-bar #tix {
+
+	padding-top: 0;
 
 }
 
@@ -190,6 +229,39 @@ th {
 	
 			display: inline;
 			text-align: left;
+
+		}
+
+	}
+
+}
+
+
+.tix-submit {
+
+	select {
+
+		padding: ( $gutter_y / 2 );
+		margin-right: ( $gutter_x / 2 );
+		width: 100%;
+		margin-bottom: $gutter_y;
+
+		@include mq( $bp_lap ) {
+
+			width: auto;
+			margin-bottom: 0;
+
+		}
+
+	}
+
+	input {
+
+		width: 100%;
+
+		@include mq( $bp_lap ) {
+
+			width: auto;
 
 		}
 
