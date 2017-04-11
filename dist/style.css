@@ -1167,7 +1167,9 @@ body.error404 .entry-content {
   line-height: 1.6;
   max-width: 38em; }
 
-.entry-content p {
+.entry-content p,
+.entry-content ul,
+.entry-content ol {
   max-width: 55em; }
 
 .avatar {
