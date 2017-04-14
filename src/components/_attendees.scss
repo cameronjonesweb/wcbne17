@@ -1,0 +1,68 @@
+#tix-attendees {
+
+	.tix-attendee-list {
+
+		margin-left: -( $gutter_x );
+		max-width: none;
+
+	}
+	
+	.tix-attendee-list li {
+
+		display: inline-block;
+		float: none;
+		margin-right: 0;
+		width: 100%;
+		vertical-align: top;
+		padding-left: $gutter_x;
+
+		@include mq( $bp_lap ) {
+
+			width: 50%;
+
+		}
+
+		@include mq( $bp_desk ) {
+
+			width: 33%;
+
+		}
+
+		&:after {
+
+			content: "";
+			display: table;
+			clear: both;
+
+		}
+
+		.tix-field {
+
+			margin-left: 0;
+			padding-left: 70px;
+			
+		}
+
+
+		a {
+
+			text-decoration: none;
+
+			&:hover {
+
+				text-decoration: underline;
+
+			}
+
+		}
+
+	}
+
+}
+
+
+.tix-attendee-name {
+
+	font-weight: bold;
+
+}
