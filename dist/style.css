@@ -1197,3 +1197,35 @@ footer.entry-meta a,
   footer.entry-meta a:hover,
   .comments-area a:hover {
     color: #5cd3bd !important; }
+
+#tix-attendees .tix-attendee-list {
+  margin-left: -3rem;
+  max-width: none; }
+
+#tix-attendees .tix-attendee-list li {
+  display: inline-block;
+  float: none;
+  margin-right: 0;
+  width: 100%;
+  vertical-align: top;
+  padding-left: 3rem; }
+  @media (min-width: 617px) {
+    #tix-attendees .tix-attendee-list li {
+      width: 50%; } }
+  @media (min-width: 992px) {
+    #tix-attendees .tix-attendee-list li {
+      width: 33%; } }
+  #tix-attendees .tix-attendee-list li:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #tix-attendees .tix-attendee-list li .tix-field {
+    margin-left: 0;
+    padding-left: 70px; }
+  #tix-attendees .tix-attendee-list li a {
+    text-decoration: none; }
+    #tix-attendees .tix-attendee-list li a:hover {
+      text-decoration: underline; }
+
+.tix-attendee-name {
+  font-weight: bold; }
