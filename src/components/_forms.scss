@@ -4,12 +4,23 @@ input, #s {
 
 }
 
-body .contact-form {
+body .contact-form,
+.tix_tickets_table {
 
 	input[type=text], input[type=email], textarea, select {
 		
 		padding: .75em 1em;
 		width: 80%;
+
+	}
+
+}
+
+.tix_tickets_table {
+
+	input[type=text],input[type=url], input[type=email], textarea, select {
+
+		width: 100%;
 
 	}
 

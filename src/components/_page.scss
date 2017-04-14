@@ -14,9 +14,15 @@
 }
 
 
-.entry-content p {
+.entry-content {
 
-	max-width: 55em;
+	p,
+	ul,
+	ol {
+
+		max-width: 55em;
+
+	}
 
 }
 
