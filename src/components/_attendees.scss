@@ -1,0 +1,45 @@
+#tix-attendees {
+	
+	.tix-attendee-list li {
+
+		display: inline-block;
+		float: none;
+		margin-right: 0;
+		width: 100%;
+
+		@include mq( $bp_lap ) {
+
+			width: 50%;
+
+		}
+
+		@include mq( $bp_desk ) {
+
+			width: 33%;
+
+		}
+
+		&:after {
+
+			content: "";
+			display: table;
+			clear: both;
+
+		}
+
+		.tix-field {
+
+			margin-left: 0;
+			padding-left: 60px;
+
+			@include mq( $bp_desk ) {
+
+				padding-left: 70px;
+
+			}
+
+		}
+
+	}
+
+}
