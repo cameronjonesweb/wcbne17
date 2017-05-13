@@ -17,7 +17,8 @@
 	}
 	
 	&:hover,
-	&:active {
+	&:active,
+	&:focus {
 	
 		color: $green;
 		background: transparent;
@@ -30,7 +31,8 @@
 		background: transparent;
 
 		&:hover,
-		&:active {
+		&:active,
+		&:focus {
 
 			background-color: $green;
 			color: $white;
@@ -53,7 +55,8 @@
 		}
 
 		&:hover,
-		&:active {
+		&:active,
+		&:focus {
 
 			color: $green;
 			background-color: $white;

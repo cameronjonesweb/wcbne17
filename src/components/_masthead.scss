@@ -50,12 +50,14 @@
 			background-colour: $green;
 			margin-left: 0;
 			margin-top: 1rem;
+			box-shadow: 0 3px 60px #000;
 
 			@include mq( $bp_lap ) {
 
 				background-colour: transparent;
 				margin-right: -$gutter_x;
 				margin-top: 0;
+				box-shadow: none;
 
 			}
 
@@ -185,6 +187,12 @@
 		    right: 0;
 		    box-shadow: 0 0 0 1px $green, 0 7px 0 1px $green, 0 14px 0 1px $green;
 		    width: 1em;
+
+	    }
+
+	    &.toggled-on {
+
+	    	margin-top: 4px;
 
 	    }
 
