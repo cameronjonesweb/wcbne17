@@ -297,7 +297,8 @@ body:not(.single-post) #comments {
 .footer-widgets-block {
   display: inline-block;
   margin-right: -5px;
-  vertical-align: top; }
+  vertical-align: top;
+  width: 100%; }
   @media (min-width: 992px) {
     .footer-widgets-block:nth-of-type(2n) {
       padding-left: 8.333%; } }

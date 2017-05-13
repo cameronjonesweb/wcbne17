@@ -37,6 +37,7 @@
 	display: inline-block;
 	margin-right: -5px;
 	vertical-align: top;
+	width: 100%;
 
 	@include mq( $bp_desk ) {
 
