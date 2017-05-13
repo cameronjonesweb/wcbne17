@@ -238,12 +238,12 @@ body:not(.single-post) #comments {
   text-shadow: none; }
   .button:visited, #subscribe-submit input[type^="submit"]:visited, input[type=submit]:visited {
     color: #fff; }
-  .button:hover, #subscribe-submit input[type^="submit"]:hover, input[type=submit]:hover, .button:active, #subscribe-submit input[type^="submit"]:active, input[type=submit]:active {
+  .button:hover, #subscribe-submit input[type^="submit"]:hover, input[type=submit]:hover, .button:active, #subscribe-submit input[type^="submit"]:active, input[type=submit]:active, .button:focus, #subscribe-submit input[type^="submit"]:focus, input[type=submit]:focus {
     color: #5cd3bd;
     background: transparent; }
   .button--ghost {
     background: transparent; }
-    .button--ghost:hover, .button--ghost:active {
+    .button--ghost:hover, .button--ghost:active, .button--ghost:focus {
       background-color: #5cd3bd;
       color: #fff; }
   .button--white {
@@ -252,7 +252,7 @@ body:not(.single-post) #comments {
     background-color: transparent; }
     .button--white:visited {
       color: #fff; }
-    .button--white:hover, .button--white:active {
+    .button--white:hover, .button--white:active, .button--white:focus {
       color: #5cd3bd;
       background-color: #fff; }
 
@@ -606,6 +606,8 @@ body.home #after-header-widgets {
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 1em; }
+  body.home #after-header-widgets .button, body.home #after-header-widgets #subscribe-submit input[type^="submit"], #subscribe-submit body.home #after-header-widgets input[type^="submit"], body.home #after-header-widgets input[type=submit] {
+    margin: 5px; }
   body.home #after-header-widgets:after {
     content: "";
     position: absolute;
@@ -748,12 +750,16 @@ body.single-wcb_sponsor #before-content-widgets:after {
     #masthead .site-navigation ul {
       background-color: #5cd3bd;
       margin-left: 0;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      -webkit-box-shadow: 0 3px 60px #000;
+              box-shadow: 0 3px 60px #000; }
       @media (min-width: 617px) {
         #masthead .site-navigation ul {
           background-color: transparent;
           margin-right: -3rem;
-          margin-top: 0; } }
+          margin-top: 0;
+          -webkit-box-shadow: none;
+                  box-shadow: none; } }
   #masthead li {
     float: none;
     list-style: none; }
@@ -826,6 +832,8 @@ body.single-wcb_sponsor #before-content-widgets:after {
       -webkit-box-shadow: 0 0 0 1px #5cd3bd, 0 7px 0 1px #5cd3bd, 0 14px 0 1px #5cd3bd;
               box-shadow: 0 0 0 1px #5cd3bd, 0 7px 0 1px #5cd3bd, 0 14px 0 1px #5cd3bd;
       width: 1em; }
+    #masthead .menu-toggle.toggled-on {
+      margin-top: 4px; }
 
 .wcorg-organizers .wcorg-organizer {
   margin-bottom: 1em; }
