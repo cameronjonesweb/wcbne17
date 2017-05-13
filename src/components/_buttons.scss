@@ -48,18 +48,18 @@
 		color: $white;
 		background-color: transparent;
 
-		&:visited {
-
-			color: $white;
-
-		}
-
 		&:hover,
 		&:active,
 		&:focus {
 
-			color: $green;
+			color: $green !important;
 			background-color: $white;
+
+		}
+
+		&:visited {
+
+			color: $white;
 
 		}
 

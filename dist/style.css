@@ -250,11 +250,11 @@ body:not(.single-post) #comments {
     border-color: #fff;
     color: #fff;
     background-color: transparent; }
+    .button--white:hover, .button--white:active, .button--white:focus {
+      color: #5cd3bd !important;
+      background-color: #fff; }
     .button--white:visited {
       color: #fff; }
-    .button--white:hover, .button--white:active, .button--white:focus {
-      color: #5cd3bd;
-      background-color: #fff; }
 
 @media (min-width: 992px) {
   .callout__primary {
