@@ -157,3 +157,63 @@
 	}
 
 }
+
+
+#footer-widget {
+
+	&-3,
+	&-4 {
+
+		.sprite {
+
+			@include mq( $bp_desk ) {
+
+				margin: 0 50px 50px 0;
+				float: left;
+
+			}
+
+		}
+
+		.button {
+
+			padding: $gutter_y/4 $gutter_x/2;
+
+		}
+
+	}
+
+	&-3 {
+
+		@include mq( $bp_desk ) {
+
+			padding-right: calc( 8.333% / 2 );
+
+		}
+
+	}
+
+	&-4 {
+
+		@include mq( $bp_desk ) {
+
+			padding-left: calc( 8.333% / 2 );
+
+		}
+
+	}
+
+	&-5 {
+
+		width: 100%;
+		padding-left: 0;
+
+		img {
+
+			border-radius: 10px;
+
+		}
+
+	}
+	
+}
