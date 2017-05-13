@@ -920,6 +920,10 @@ body.search article {
     background-position: 0px -100px; }
   .sprite--megaphone {
     background-position: 0px -200px; }
+  .sprite--calendar {
+    background-position: 0px -300px; }
+  .sprite--location {
+    background-position: -100px -300px; }
 
 td,
 th {
