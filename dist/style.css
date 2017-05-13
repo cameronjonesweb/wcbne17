@@ -362,6 +362,31 @@ body:not(.single-post) #comments {
   [id^="footer-widget-2"] a:hover {
     color: #5cd3bd !important; }
 
+@media (min-width: 992px) {
+  #footer-widget-3 .sprite, #footer-widget-4 .sprite {
+    margin: 0 50px 50px 0;
+    float: left; } }
+
+#footer-widget-3 .button, #footer-widget-3 #subscribe-submit input[type^="submit"], #subscribe-submit #footer-widget-3 input[type^="submit"], #footer-widget-3 input[type=submit], #footer-widget-4 .button, #footer-widget-4 #subscribe-submit input[type^="submit"], #subscribe-submit #footer-widget-4 input[type^="submit"], #footer-widget-4 input[type=submit] {
+  padding: 0.5rem 1.5rem; }
+
+@media (min-width: 992px) {
+  #footer-widget-3 {
+    padding-right: -webkit-calc( 8.333% / 2);
+    padding-right: calc( 8.333% / 2); } }
+
+@media (min-width: 992px) {
+  #footer-widget-4 {
+    padding-left: -webkit-calc( 8.333% / 2);
+    padding-left: calc( 8.333% / 2); } }
+
+#footer-widget-5 {
+  width: 100%;
+  padding-left: 0; }
+  #footer-widget-5 img {
+    -webkit-border-radius: 10px;
+            border-radius: 10px; }
+
 input, #s {
   padding: .75em 1em; }
 
