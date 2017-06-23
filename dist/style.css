@@ -569,7 +569,7 @@ body.home #after-header-widgets {
     body.error404 .entry-header > *,
     body.error404 body.home #after-header-widgets aside .entry-header > *, body.home #after-header-widgets aside body.blog #before-content-widgets:after, body.blog body.home #after-header-widgets aside #before-content-widgets:after, body.home #after-header-widgets aside
     body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after,
-    body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets aside #before-content-widgets:after, body.home #after-header-widgets aside .sponsor-level, body.home #after-header-widgets aside .widget-area.front-page .widget > *:not(.textwidget), .widget-area.front-page body.home #after-header-widgets aside .widget > *:not(.textwidget), body.home #after-header-widgets aside .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget body.home #after-header-widgets aside .widget-title, body.home #after-header-widgets aside body.single-post article > .entry-content, body.single-post body.home #after-header-widgets aside article > .entry-content, body.home #after-header-widgets aside
+    body.single:not(.single-post):not(.single-wcb_speaker) body.home #after-header-widgets aside #before-content-widgets:after, body.home #after-header-widgets aside .widget.wcb_widget_sponsors, body.home #after-header-widgets aside .widget-area.front-page .widget > *:not(.textwidget), .widget-area.front-page body.home #after-header-widgets aside .widget > *:not(.textwidget), body.home #after-header-widgets aside .widget-area.front-page .widget .widget-title, .widget-area.front-page .widget body.home #after-header-widgets aside .widget-title, body.home #after-header-widgets aside body.single-post article > .entry-content, body.single-post body.home #after-header-widgets aside article > .entry-content, body.home #after-header-widgets aside
     body.single-wcb_speaker article > .entry-content,
     body.single-wcb_speaker body.home #after-header-widgets aside article > .entry-content, body.home #after-header-widgets aside
     body.archive article,
@@ -911,40 +911,57 @@ body.search article {
   body.search article:nth-child(even) {
     background-color: #f4f4f4; }
 
-.widget.wcb_widget_sponsors .widget-title {
-  padding-top: 0; }
-
-.widget.wcb_widget_sponsors .sponsor-level-title {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1em; }
-
-.widget.wcb_widget_sponsors .sponsor-logo {
-  background-color: #fff;
-  border-style: solid;
-  border-width: 3px;
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-  color: #5cd3bd;
-  display: inline-block;
-  font-weight: 600;
-  line-height: 0;
-  margin: 1em;
-  padding: 2em;
-  text-decoration: none;
-  vertical-align: middle;
-  width: 80%; }
-  @media (min-width: 617px) {
-    .widget.wcb_widget_sponsors .sponsor-logo {
-      width: 33.333%; } }
-  @media (min-width: 992px) {
-    .widget.wcb_widget_sponsors .sponsor-logo {
-      width: 20%; } }
-  .widget.wcb_widget_sponsors .sponsor-logo img {
-    max-height: 10em; }
+.widget.wcb_widget_sponsors {
+  position: relative;
+  text-align: center; }
+  .widget.wcb_widget_sponsors:before {
+    background-color: #f4f4f4;
+    content: "";
+    display: block;
+    height: 100%;
+    left: -333.33%;
+    position: absolute;
+    top: 0;
+    width: 1000%; }
+  .widget.wcb_widget_sponsors .widget-title {
+    padding-top: 0; }
+  .widget.wcb_widget_sponsors .sponsor-level-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em; }
+  .widget.wcb_widget_sponsors .sponsor-logo {
+    background-color: #fff;
+    border-style: solid;
+    border-width: 3px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    color: #5cd3bd;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 0;
+    margin: 1em;
+    padding: 2em;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 80%; }
+    @media (min-width: 617px) {
+      .widget.wcb_widget_sponsors .sponsor-logo {
+        width: 33.333%; } }
+    @media (min-width: 992px) {
+      .widget.wcb_widget_sponsors .sponsor-logo {
+        width: auto; } }
+    .widget.wcb_widget_sponsors .sponsor-logo img {
+      max-height: 10em;
+      height: auto; }
+      @media (min-width: 992px) {
+        .widget.wcb_widget_sponsors .sponsor-logo img {
+          max-width: 10em;
+          width: auto; } }
 
 .sponsor-level {
+  display: inline-block;
+  width: auto;
   text-align: center; }
   .sponsor-level.gold .sponsor-logo {
     border-color: #C9AE5D; }
@@ -1182,7 +1199,7 @@ body.single-post .entry-header > *,
 body.single-wcb_speaker .entry-header > *,
 body.search .page-header > *,
 body.error404 .entry-header > *, body.blog #before-content-widgets:after,
-body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .sponsor-level, .widget-area.front-page .widget > *:not(.textwidget), .widget-area.front-page .widget .widget-title, body.single-post article > .entry-content,
+body.single:not(.single-post):not(.single-wcb_speaker) #before-content-widgets:after, .widget.wcb_widget_sponsors, .widget-area.front-page .widget > *:not(.textwidget), .widget-area.front-page .widget .widget-title, body.single-post article > .entry-content,
 body.single-wcb_speaker article > .entry-content,
 body.archive article,
 body.page article > .entry-content,
