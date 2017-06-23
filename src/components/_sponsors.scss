@@ -89,8 +89,14 @@
 .sponsor-level {
 
 	display: inline-block;
-	width: auto;
 	text-align: center;
+	width: 100%;
+
+	@include mq( $bp_desk ) {
+
+		width: auto;
+
+	}
 
 	&.gold .sponsor-logo {
 
