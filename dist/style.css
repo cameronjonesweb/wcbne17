@@ -961,8 +961,11 @@ body.search article {
 
 .sponsor-level {
   display: inline-block;
-  width: auto;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
+  @media (min-width: 992px) {
+    .sponsor-level {
+      width: auto; } }
   .sponsor-level.gold .sponsor-logo {
     border-color: #C9AE5D; }
   .sponsor-level.silver .sponsor-logo {
