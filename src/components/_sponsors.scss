@@ -3,6 +3,22 @@
 	@extend .band;
 	@extend .band--large;
 	@extend .band--grey;
+	@extend .wrap;
+	position: relative;
+	text-align: center;
+
+	&:before {
+
+		background-color: $grey;
+		content: "";
+		display: block;
+		height: 100%;
+		left: -333.33%;
+		position: absolute;
+		top: 0;
+		width: 1000%;
+
+	}
 
 
 	.widget-title {
@@ -47,14 +63,21 @@
 
 		@include mq( $bp_desk ) {
 
-			width: 20%;
+			width: auto;
 
 		}
 
 		img {
 
 			max-height: 10em;
-			// max-width: 10em;
+			height: auto;
+
+			@include mq( $bp_desk ) {
+
+				max-width: 10em;
+				width: auto;
+
+			}
 
 		}
 
@@ -65,8 +88,8 @@
 
 .sponsor-level {
 
-	@extend .wrap;
-	
+	display: inline-block;
+	width: auto;
 	text-align: center;
 
 	&.gold .sponsor-logo {
