@@ -66,8 +66,16 @@ body.blog article {
 }
 
 
-	.comment-respond {
+.comment-respond,
+.comments-title,
+.commentlist {
 
-		@extend .wrap;
+	@extend .wrap;
 
-	}
+}
+
+.commentlist {
+
+	list-style: none;
+	
+}
