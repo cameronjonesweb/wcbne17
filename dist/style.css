@@ -172,6 +172,9 @@ body.blog article {
 body:not(.single-post) #comments {
   display: none; }
 
+.commentlist {
+  list-style: none; }
+
 .box {
   background-color: #fff;
   color: inherit;
@@ -557,7 +560,9 @@ body.home #after-header-widgets {
       right: 0;
       padding: 2rem 3rem;
       font-size: 1rem; }
-    body.home #after-header-widgets aside .wrap, body.home #after-header-widgets aside .comment-respond, body.home #after-header-widgets aside [id^="footer-widgets"], body.home #after-header-widgets aside body.page:not(.home) .entry-header > *, body.page:not(.home) body.home #after-header-widgets aside .entry-header > *, body.home #after-header-widgets aside
+    body.home #after-header-widgets aside .wrap, body.home #after-header-widgets aside .comment-respond, body.home #after-header-widgets aside
+    .comments-title, body.home #after-header-widgets aside
+    .commentlist, body.home #after-header-widgets aside [id^="footer-widgets"], body.home #after-header-widgets aside body.page:not(.home) .entry-header > *, body.page:not(.home) body.home #after-header-widgets aside .entry-header > *, body.home #after-header-widgets aside
     body.archive .page-header > *,
     body.archive body.home #after-header-widgets aside .page-header > *, body.home #after-header-widgets aside
     body.single-post .entry-header > *,
@@ -1196,7 +1201,9 @@ body.admin-bar #tix {
       margin-right: 0.5em;
       vertical-align: bottom; }
 
-.wrap, .comment-respond, [id^="footer-widgets"], body.page:not(.home) .entry-header > *,
+.wrap, .comment-respond,
+.comments-title,
+.commentlist, [id^="footer-widgets"], body.page:not(.home) .entry-header > *,
 body.archive .page-header > *,
 body.single-post .entry-header > *,
 body.single-wcb_speaker .entry-header > *,
